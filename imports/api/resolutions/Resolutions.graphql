@@ -1,4 +1,8 @@
-type Users {
+type User {
+    _id:String!
+    name:String!
+}
+type Mentor {
     _id:String!
     name:String!
 }
