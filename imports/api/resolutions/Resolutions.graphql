@@ -1,0 +1,4 @@
+type Users {
+    _id:String!
+    name:String!
+}
