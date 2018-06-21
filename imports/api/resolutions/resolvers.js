@@ -1,15 +1,13 @@
+import Resolutions from './resolutions';
+
+// Resolutions.insert({
+//     name: 'Staryu'
+// })
+
 export default {
     Query: {
         users() {
-            return [{
-                    _id: "efoinenfonie",
-                    name: "Abhishek Prasad"
-                },
-                {
-                    _id: "efoinenfonie",
-                    name: "Abhishek Prasad"
-                }
-            ]
+            return Resolutions.find({}).fetch();
         },
         mentors() {
             return [{
