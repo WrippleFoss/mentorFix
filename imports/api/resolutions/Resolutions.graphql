@@ -6,3 +6,6 @@ type Mentor {
     _id:String!
     name:String!
 }
+type Mutation{
+    createUser: User
+}

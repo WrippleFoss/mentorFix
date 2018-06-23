@@ -1,8 +1,6 @@
 import Resolutions from './resolutions';
 
-// Resolutions.insert({
-//     name: 'Staryu'
-// })
+
 
 export default {
     Query: {
@@ -14,6 +12,13 @@ export default {
                 _id: "afeqfqeg",
                 name: "Mentor 1"
             }]
+        }
+    },
+    Mutation: {
+        createUser(){
+            // const resID=Resolutions.insert({
+            //     name: 'Staryu'
+            // })
         }
     }
 };
