@@ -6,11 +6,11 @@ import { graphql } from 'react-apollo';
 
 const App = ({ data }) => {
 	return (
-		<div>
+		<React.Fragment>
+			<Nav things={data.hi} />
 			<h1>Hula hooping is cool</h1>
 			<UserForm />
-			<Nav things={data.hi} />
-		</div>
+		</React.Fragment>
 	);
 };
 
