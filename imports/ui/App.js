@@ -8,7 +8,7 @@ const App = ({ data }) => {
 	return (
 		<React.Fragment>
 			<Nav things={data.hi} />
-			<h1>Hula hooping is cool</h1>
+			<h1>Mentor fix is an open source platform where users can become mentors and find other users who can benifit from their mentoring.</h1>
 			<UserForm />
 		</React.Fragment>
 	);
