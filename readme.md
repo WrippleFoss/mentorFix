@@ -30,6 +30,8 @@ Please read [CONTRIBUTING.md](https://github.com/WrippleFoss/mentorFix/blob/mast
 * get data
 * setup signup and login
 * design basic mentor/mentee page
+* redux introduction
+* update the documentation
 
 License
 ----
