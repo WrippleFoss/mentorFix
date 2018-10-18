@@ -3,6 +3,7 @@ import Nav from './components/nav';
 import UserForm from './components/UserForm';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+import './style.css'
 
 const App = ({ data }) => {
 	return (
