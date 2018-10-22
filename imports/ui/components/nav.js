@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -34,6 +35,7 @@ function ButtonAppBar(props) {
             mentorFix
           </Typography>
           <Button color="inherit">Login</Button>
+          <Button color="inherit" onClick={()=>props.history.push('/signup')}>Signup</Button>
         </Toolbar>
       </AppBar>
     </div>
@@ -44,4 +46,4 @@ ButtonAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(withRouter(ButtonAppBar));
