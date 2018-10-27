@@ -10,6 +10,7 @@ const App = ({ data }) => {
 			<Nav things={data.hi} />
 			<h1>Mentor fix is an open source platform where users can become mentors and find other users who can benifit from their mentoring.</h1>
 			<UserForm />
+
 		</React.Fragment>
 	);
 };
