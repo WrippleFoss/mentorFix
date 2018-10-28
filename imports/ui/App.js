@@ -3,15 +3,20 @@ import Nav from './components/nav';
 import UserForm from './components/UserForm';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
-import './style.css'
+import './style.css';
+import CardExampleExpandable from './components/card';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const App = ({ data }) => {
-	return (
+    return (
+        <MuiThemeProvider>
 		<React.Fragment>
 			<Nav things={data.hi} />
 			<h1>Mentor fix is an open source platform where users can become mentors and find other users who can benifit from their mentoring.</h1>
 			<UserForm />
-		</React.Fragment>
+            <CardExampleExpandable />
+            </React.Fragment>
+            </MuiThemeProvider>
 	);
 };
 
