@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
 import gql from 'graphql-tag';
 import {graphql} from 'react-apollo';
+import { connect } from 'react-redux';
 
 const createUser = gql`
     mutation createUser{
@@ -23,7 +24,13 @@ class UserForm extends Component{
         )
     }
 }
-
+const mapStateToProps= (state) =>{
+    console.log("initState",state);
+    return {
+        initState : state
+    }
+}
+const reduxUserForm = connect(mapStateToProps)(UserForm);
 export default graphql(createUser,{
     name: 'createUser'
-})(UserForm);
+})(reduxUserForm);
