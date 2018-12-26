@@ -36,6 +36,8 @@ function ButtonAppBar(props) {
           <Typography variant="title" color="inherit" className={classes.grow}>
             mentorFix
           </Typography>
+          <Button color="inherit">How it works</Button>
+          <Button color="inherit">About</Button>
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>

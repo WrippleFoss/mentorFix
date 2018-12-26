@@ -4,9 +4,6 @@ import Resolutions from './resolutions';
 
 export default {
     Query: {
-        users() {
-            return Resolutions.find({}).fetch();
-        },
         mentors() {
             return [{
                 _id: "afeqfqeg",

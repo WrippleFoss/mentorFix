@@ -1,11 +1,37 @@
-type User {
-    _id:String!
+type Mentee {
+    _id:ID!
     name:String!
+    conferences: Conference
 }
 type Mentor {
-    _id:String!
+    _id:ID!
     name:String!
+    details: MentorDetails!
+    conferences: Conference
 }
+type Conference{
+    _id: ID!
+    mentor: String!
+    mentee: ID
+    title: String!
+    details: ConferenceDetails!
+}
+
+type ConferenceDetails {
+    info: String
+    date: String!
+    joiningLink: String!
+    time: String!
+}
+type MentorDetails{
+    bio: String
+    skillset: [String]
+}
+type MenteeDetails{
+    bio: String
+    interests: [String]
+}
+
 type Mutation{
     createUser: User
 }

@@ -6,11 +6,11 @@ import merge from 'lodash/merge';
 const testSchema = `
 type Query{
     hi: String,
-    users: [User],
-    mentors: [Mentor]
+    mentees: Mentee,
+    mentors: Mentor
 }
 `;
-const typeDefs = [testSchema,ResolutionsSchema];
+const typeDefs = [ResolutionsSchema];
 
 const testResolve = {
     Query: {
@@ -24,8 +24,7 @@ const resolvers = merge(
     testResolve,ResolutionsResolvers
 )
 const schema = makeExecutableSchema({
-    typeDefs,
-    resolvers
+    typeDefs
 });
 createApolloServer({
     schema

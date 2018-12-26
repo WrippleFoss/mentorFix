@@ -20,6 +20,9 @@ class UserForm extends Component{
             <div>
                 <input ref={input => (this.name=input)}/>
                 <button onClick={this.submitForm}>Submit</button>
+                {
+                    this.props.initState.Fijsaofh
+                }
             </div>
         )
     }

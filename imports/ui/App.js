@@ -6,17 +6,16 @@ import { graphql } from 'react-apollo';
 import './style.css';
 import CardExampleExpandable from './components/card';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import HomePage from './components/homePage';
 
 const App = ({ data }) => {
     return (
         <MuiThemeProvider>
-		<React.Fragment>
-			<Nav things={data.hi} />
-			<h1>Mentor fix is an open source platform where users can become mentors and find other users who can benifit from their mentoring.</h1>
-			<UserForm />
-            <CardExampleExpandable />
-            </React.Fragment>
-            </MuiThemeProvider>
+			<React.Fragment>
+				<Nav things={data.hi} />
+				<HomePage />
+			</React.Fragment>
+		</MuiThemeProvider>
 	);
 };
 
