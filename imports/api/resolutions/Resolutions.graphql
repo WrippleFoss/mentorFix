@@ -31,7 +31,3 @@ type MenteeDetails{
     bio: String
     interests: [String]
 }
-
-type Mutation{
-    createUser: User
-}
