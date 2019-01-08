@@ -2,5 +2,4 @@ import Resolutions from './resolutions';
 
 
 
-export default {
-};
+export default Resolutions;

@@ -5,7 +5,13 @@ import ResolutionsResolvers from '../../api/resolutions/resolvers';
 import merge from 'lodash/merge';
 const testSchema = `
 type Query{
-    dummy: String
+    hi: String,
+    conferenceDetails: ConferenceDetails,
+    mentor: Mentor,
+    mentee: Mentee,
+    conference: Conference,
+    mentorDetails: MentorDetails
+    menteeDetails: MenteeDetails
 }
 `;
 const typeDefs = [testSchema,ResolutionsSchema];
@@ -19,6 +25,7 @@ const testResolve = {
 };
 //hi
 const resolvers = merge(
+    testResolve,
     ResolutionsResolvers
 )
 const schema = makeExecutableSchema({
