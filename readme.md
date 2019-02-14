@@ -12,6 +12,8 @@ Dillinger uses a number of open source projects to work properly:
 * [Meteor](https://www.meteor.com/)
 * [Apollo](https://www.apollographql.com/)
 
+Soon will be updated to Node, React, Mongo, Express and Graphql
+
 ### Installation
 ```
 $ git clone https://github.com/WrippleFoss/mentorFix
@@ -23,15 +25,13 @@ goto http://localhost:3000
 ```
 
 ### Development
-Please read [CONTRIBUTING.md](https://github.com/WrippleFoss/mentorFix/blob/master/contribution.md) for Details.
+Please read [CONTRIBUTING.md](https://github.com/WrippleFoss/mentorFix/blob/master/contributing.md) for Details.
 
 ### Todos
-* Setup mongo
-* get data
-* setup signup and login
-* design basic mentor/mentee page
-* redux introduction
-* update the documentation
+* Documentation design
+* Tech change
+* Updating documentations on drive
+* setup deployment and repos
 
 License
 ----
