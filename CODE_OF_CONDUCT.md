@@ -1,6 +1,6 @@
 # CODE OF CONDUCT
 
-This code of conduct outlines our expectations for participants within the WrippleFOSS [Link](https://wripplefoss.github.io/), as well as steps to reporting unacceptable behavior. We are committed to providing a welcoming and inspiring community for all and expect our code of conduct to be honored. Anyone who violates this code of conduct may be banned from the community.
+This code of conduct outlines our expectations for participants within the [WrippleFOSS](https://wripplefoss.github.io/), as well as steps to reporting unacceptable behavior. We are committed to providing a welcoming and inspiring community for all and expect our code of conduct to be honored. Anyone who violates this code of conduct may be banned from the community.
 
 Our open source community strives to:
 
