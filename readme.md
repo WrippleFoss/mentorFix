@@ -8,7 +8,7 @@ MentorFix is an open source initiative to find mentors for people around who hav
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Prerequisites(They will change so, redundant at the moment)
 
 Your machine should have NPM, NodeJS and Meteor installed to use MentorFix locally. A full guide for installing each of these is given below:
 
@@ -65,13 +65,6 @@ Soon will be updated to Node, React, Mongo, Express and Graphql
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/WrippleFoss/mentorFix/blob/master/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Todos
-
-- Documentation design
-- Tech change
-- Updating documentations on drive
-- setup deployment and repos
 
 ## Authors
 
