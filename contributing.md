@@ -4,6 +4,34 @@ When contributing to this repository,please first discuss the change you wish to
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
+## How to Start Project
+
+Follow the command below:
+
+* Frontend
+
+```js
+cd view-src
+
+yarn
+
+yarn start
+```
+
+This will start your react server on the port 3000
+
+* Backend
+
+```js
+cd server-api
+
+yarn
+
+yarn start
+```
+
+This will start your node server at 4000 port
+
 ## Pull Request Process
 
 1. Create a fork
