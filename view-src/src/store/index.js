@@ -10,9 +10,9 @@ const composeEnhancers = composeWithDevTools({});
 const enhancers = composeEnhancers(applyMiddleware(...middleware));
 
 const configStore = initialState => {
-	const store = createStore(rootReducers, initialState, enhancers);
+    const store = createStore(rootReducers, initialState, enhancers);
 
-	return store;
+    return store;
 };
 
 export default configStore;
