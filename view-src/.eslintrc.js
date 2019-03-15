@@ -35,11 +35,15 @@ module.exports = {
             "error",
             "always"
         ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+       "camelcase": ["error", {"properties": "always"}],
       "no-console": "off",
       "no-undef": "off",
       "no-unused-vars": "off",
       "import/order": "off",
-      "camelcase": "off",
-      "eqeqeq": "off",
+
     }
 };
