@@ -1,7 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function HelloWorld() {
-	return <div>HelloWorld</div>;
-}
+const HelloWorld = props => {
+  return <div>Hello {props.name}</div>;
+};
+
+HelloWorld.propTypes = {
+  name: PropTypes.string.isRequired
+};
+
+//Default value for now
+HelloWorld.defaultProps = {
+  name: "World!"
+};
 
 export default HelloWorld;
