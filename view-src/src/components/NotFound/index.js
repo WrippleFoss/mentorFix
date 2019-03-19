@@ -11,7 +11,8 @@ NotFound.propTypes = {
 
 //Default value for now
 NotFound.defaultProps = {
-  message: "Error 404!"
+  message: "Error 404!" //maybe add more error messages and make this a dynamic component which renders component 
+                        //based on the error which is passed as prop
 };
 
 export default NotFound;
