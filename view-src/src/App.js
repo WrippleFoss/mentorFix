@@ -11,17 +11,17 @@ import theme from "./theme";
 import configureStore from "./store";
 
 function App() {
-	return (
-		<CssBaseline>
-			<Provider store={configureStore(window.__INITIAL_STATE__)}>
-				<BrowserRouter>
-					<MuiThemeProvider theme={theme}>
-						<AppRoutes />
-					</MuiThemeProvider>
-				</BrowserRouter>
-			</Provider>
-		</CssBaseline>
-	);
+    return (
+        <CssBaseline>
+            <Provider store={configureStore(window.__INITIAL_STATE__)}>
+                <BrowserRouter>
+                    <MuiThemeProvider theme={theme}>
+                        <AppRoutes />
+                    </MuiThemeProvider>
+                </BrowserRouter>
+            </Provider>
+        </CssBaseline>
+    );
 }
 
 export default App;
