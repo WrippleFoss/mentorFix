@@ -10,6 +10,8 @@ const app = express();
 // all the middleware are defined here
 middleware(app);
 
+MongoDb();
+
 // server is started
 app.listen(PORT, () => {
   console.log(`The server is listening on ${PORT}`);

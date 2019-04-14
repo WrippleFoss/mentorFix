@@ -1,4 +1,5 @@
 const graphql = require('graphql');
+const Mentor = require('../../models/mentor');
 
 const {
   GraphQLObjectType,
@@ -121,8 +122,30 @@ const rootQuery = new GraphQLObjectType({
         id: { type: GraphQLID },
       },
       resolve(parent, args) {
-        return dummy2[0];
-        // this is where we write code to get data from db
+        return {};
+      },
+    },
+  },
+});
+
+const Mutations = new GraphQLObjectType({
+  name: 'Mutations',
+  fields: {
+    addMentor: {
+      type: MentorType,
+      args: {
+        username: { type: GraphQLString },
+        name: { type: GraphQLString },
+        password: { type: GraphQLString },
+        email: { type: GraphQLString },
+      },
+      resolve(parent, args) {
+        const mentor = new Mentor({
+          name: args.name,
+          email: args.email,
+          verified: false,
+        });
+        return mentor.save();
       },
     },
   },
@@ -130,4 +153,5 @@ const rootQuery = new GraphQLObjectType({
 
 module.exports = new GraphQLSchema({
   query: rootQuery,
+  mutation: Mutations,
 });
