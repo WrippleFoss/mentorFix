@@ -2,11 +2,7 @@ const graphql = require('graphql');
 const Mentor = require('../../models/mentor');
 
 const {
-  GraphQLObjectType,
-  GraphQLString,
-  GraphQLBoolean,
-  GraphQLSchema,
-  GraphQLID,
+  GraphQLObjectType, GraphQLString, GraphQLBoolean, GraphQLSchema, GraphQLID,
 } = graphql;
 
 const dummy = [

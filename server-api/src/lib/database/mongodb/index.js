@@ -16,10 +16,9 @@ try {
   mongoose.createConnection(DB_URL, { useNewUrlParser: true });
 }
 
-module.exports = () => (mongoose.connection
+module.exports = () => mongoose.connection
   .once('open', () => console.log('MongoDb is running'))
   .on('error', (err) => {
     console.error(err);
     throw err;
-  })
-);
+  });

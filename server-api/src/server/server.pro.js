@@ -4,7 +4,7 @@ import os from 'os';
 import express from 'express';
 import { PORT } from './config';
 /* eslint-disable */
-import MongoDb from "../lib/database/mongodb";
+import MongoDb from '../lib/database/mongodb';
 /* eslint-enable */
 
 import middleware from './middleware';
