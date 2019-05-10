@@ -1,17 +1,14 @@
-import {
-  APP_IS_READY,
-  APP_IS_NOT_READY,
-} from '../constant/app';
+import { APP_IS_READY, APP_IS_NOT_READY } from "../constant/app";
 
 export default function reducer(state = false, action) {
-  switch (action.type) {
+    switch (action.type) {
     case APP_IS_READY: {
-      return true;
+        return true;
     }
     case APP_IS_NOT_READY: {
-      return false;
+        return false;
     }
     default:
-      return state;
-  }
+        return state;
+    }
 }

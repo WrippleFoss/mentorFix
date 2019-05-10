@@ -1,11 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function HelloWorld() {
-  return (
-    <div>
-      HelloWorld
-    </div>
-  )
+const HelloWorld = props => {
+  return <div>Hello world</div>;
 };
 
 export default HelloWorld;
