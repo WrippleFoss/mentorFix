@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Route from "react-router-dom/Route";
-import Switch from "react-router-dom/Switch";
+import {Route, Switch} from "react-router-dom";
 import NotFound from "./components/NotFound";
 import Home from "./components/HelloWorld";
 
