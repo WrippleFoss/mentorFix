@@ -22,19 +22,18 @@ jobs:
       # change directory to the web view first
       - run:
           command: cd src-view
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+          restore_cache: # Download and cache dependencies
+            keys:
+              - v1-dependencies-{{ checksum "package.json" }}
+              # fallback to using the latest cache if no exact match is found
+              - v1-dependencies-
 
-      - run: npm install
+      - run: cd src-view && npm install
 
       - save_cache:
           paths:
-            - node_modules
+            - src-view/node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm test
+      - run: cd src-view && npm test
