@@ -19,21 +19,17 @@ jobs:
     steps:
       - checkout
       - restore_cache: # Download and cache dependencies
-          run:
-            command: cd src-view
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-{{ checksum "src-view/package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
       - run: cd src-view && npm install
 
       - save_cache:
-          run:
-            command: cd src-view
           paths:
             - src-view/node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "src-view/package.json" }}
 
       # run tests!
       - run: cd src-view && npm test
