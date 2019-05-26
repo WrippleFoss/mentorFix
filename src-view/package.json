@@ -1,0 +1,26 @@
+{
+  "name": "src-view",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "parcel-bundler": "^1.12.3",
+    "react-test-renderer": "^16.8.6"
+  },
+  "scripts": {
+    "test": "jest --config=jest.config.json",
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
