@@ -18,6 +18,8 @@ jobs:
 
     steps:
       - checkout
+
+      # change directory to the web view first
       - run:
           command: cd src-view
       # Download and cache dependencies
