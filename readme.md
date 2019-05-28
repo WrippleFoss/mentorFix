@@ -10,44 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Your machine should have NPM(or yarn), NodeJS and MongoDB server installed to use MentorFix locally. A full guide for installing each of these is given below:
-
-```sh
-# Ubuntu
-$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-$ sudo apt-get install -y nodejs
-```
-
-```sh
-# Windows
-Windows users need to download the installer from Official NodeJS and run it with administrator privileges.https://nodejs.org/
-
-```
-
-```sh
-# macOS
-brew install node
-```
-
-To check NodeJS and NPM has been installed run on terminal or command prompt
-
-```js
-node -v
-npm -v
-```
-
-* MongoDB server
-
-  * echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-  * apt-get install mongodb-org
-  * systemctl start mongod
-  * systemctl enable mongod
-  * mongo
-  * mongod
-  * apt install mongodb-server
-  * mongo
-  * mongod
-  * .systemctl start mongod
+Your machine should have NPM(or yarn), NodeJS and MongoDB server installed to use MentorFix locally.
 
 ### Installation
 
@@ -103,6 +66,10 @@ Please read [CONTRIBUTING.md](https://github.com/WrippleFoss/mentorFix/blob/mast
 ## Authors
 
 * [Abhishek Prasad](https://github.com/abhishek71994)
+
+## Get in touch
+
+Join our discord server by clicking on this [link](https://discord.gg/7TahF4D)
 
 ## Important Notice
 
