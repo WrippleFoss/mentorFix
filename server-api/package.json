@@ -6,8 +6,7 @@
   "scripts": {
     "lint": "eslint '**/*.js'",
     "lint-fix": "prettier-eslint '**/*.js' --write",
-    "start:dev": "NODE_ENV=development nodemon --ignore 'public' --legacy-watch --exec babel-node src/server/index.js",
-    "start:pro": "NODE_ENV=production nodemon --ignore 'public' --legacy-watch --exec babel-node src/server/index.js"
+    "start": "nodemon --ignore 'public' --legacy-watch --exec babel-node src/server"
   },
   "license": "ISC",
   "dependencies": {
