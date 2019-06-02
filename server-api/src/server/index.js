@@ -1,8 +1,17 @@
-const { NODE_ENV } = process.env;
+import express from 'express';
+import graphqlConfig from './graphqlConfig';
+import MongoDb from '../lib/database/mongodb';
+import { PORT } from './config';
 
-if (NODE_ENV === 'development') {
-  module.exports = require('./server.dev');
-}
-if (NODE_ENV === 'production') {
-  module.exports = require('./server.pro');
-}
+// app is initialized
+const app = express();
+
+// all the middleware are defined here
+graphqlConfig(app);
+
+MongoDb();
+
+// server is started
+app.listen(PORT, () => {
+  console.log(`The server is listening on ${PORT}`);
+});
