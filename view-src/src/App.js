@@ -1,6 +1,5 @@
 import React from "react";
 import { Provider } from "react-redux";
-import BrowserRouter from "react-router-dom/BrowserRouter";
 
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -14,11 +13,9 @@ function App() {
     return (
         <CssBaseline>
             <Provider store={configureStore(window.__INITIAL_STATE__)}>
-                <BrowserRouter>
                     <MuiThemeProvider theme={theme}>
                         <AppRoutes />
-                    </MuiThemeProvider>
-                </BrowserRouter>
+                    </MuiThemeProvider> 
             </Provider>
         </CssBaseline>
     );
