@@ -8,13 +8,13 @@ const mentor = new Schema({
   name: String,
   webinars: Array, // Type will be changed to `WebinarTypes`
   verified: String,
-  password: String,
+  password: { type: String, required: true },
   bio: String,
   location: String,
   links: Array, // Type will be changed to `{}_public profile links_`
-  email: String,
+  email: { type: String, required: true },
   followers: Object, // Type will be changed to `menteeTypeID`
-  expertise: Object,
+  expertise: Object
 });
 
 module.exports = mongoose.model('Mentor', mentor);
