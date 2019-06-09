@@ -9,9 +9,10 @@ const addMentor = {
     password: { type: GraphQLString }
   },
   resolve(parent, args) {
-    let mentor = new mentorModel({
+    const mentor = new mentorModel({
       email: args.email,
-      password: args.password
+      password: args.password,
+      verified: false
     });
     return mentor.save();
   }
