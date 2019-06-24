@@ -6,29 +6,17 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## How to Start Project
 
-Follow the command below:
+Follow the command below run locally:
 
-* Frontend
 
 ```js
-cd view-src
+cd src-view
 
 yarn
 
 yarn start
 ```
 
-This will start your react server on the port 3000
-
-* Backend
-
-```js
-cd server-api
-
-yarn
-
-yarn start
-```
 
 This will start your node server at 4000 port
 
