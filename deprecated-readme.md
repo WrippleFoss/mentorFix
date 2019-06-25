@@ -2,9 +2,6 @@
 
 MentorFix is an open source initiative to find mentors for people around who have certain projects in mind but need people/volunteers to bring those into life.
 
-mentorFix repo has the front-end code of project MentorFix.
-visit https://github.com/WrippleFoss/mentorFix-API for back-end related code
-
 > Be what you wanted your mentors to be for you.
 
 ## Getting Started
@@ -13,38 +10,54 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Your machine should have NPM(or yarn) and NodeJS  installed to use mentorFix locally.
+Your machine should have NPM(or yarn), NodeJS and MongoDB server installed to use MentorFix locally.
 
 ### Installation
 
 ```js
-git clone hhttps://github.com/WrippleFoss/mentorFix.git
+git clone https://github.com/WrippleFoss/mentorFix
 ```
 
-
-
+* Backend
 
 ```js
-cd src-view
+cd server-api
+yarn
+```
+
+* Frontend
+
+```js
+cd view-src
 yarn
 ```
 
 ### Run locally
 
+* Backend
 
 ```js
-$ cd src-view
+$ cd server-api
 $ yarn start
-goto http://localhost:1234
+goto http://localhost:4000
+```
+
+* Frontend
+
+```js
+$ cd view-src
+$ yarn start
+goto http://localhost:3000
 ```
 
 ## Built With
 
-This repo uses a number of open source projects to work properly:
+MentorFix uses a number of open source projects to work properly:
 
 * [ReactJS](https://reactjs.org/)
 * [GraphQL](https://www.graphql.com/)
-
+* [Node.js](https://nodejs.org/)
+* [Mongoose.js](https://mongoosejs.com/)
 
 ## Contributing
 
