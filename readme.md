@@ -64,6 +64,13 @@ Join our discord server by clicking on this [link](https://discord.gg/7TahF4D)
 
 ![GirlScript](https://cdn-images-1.medium.com/max/600/1*47hUn6EfnP5hZkHslmUsxQ.jpeg)
 
+
+> **MentorFix** has been featured at [Rails Girls Summer of Code blog](https://railsgirlssummerofcode.org/blog/)
+
+![Rails Girls Summer of Code](https://railsgirlssummerofcode.org/img/press/section-logos/rgsoc-logo_white-red-background.png)
+
+**MentorFix** at [Rails Girls Summer of Code](https://teams.railsgirlssummerofcode.org/projects/252-mentorfix)
+
 ## License
 
 This project is licensed under the Apache-2.0 - see the [LICENSE.md](https://github.com/WrippleFoss/mentorFix/blob/master/LICENSE) file for details
