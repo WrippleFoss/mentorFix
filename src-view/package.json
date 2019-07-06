@@ -16,7 +16,7 @@
     "babel-core": "^6.26.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
-    "husky": "^2.4.1",
+    "husky": "^3.0.0",
     "parcel-bundler": "^1.12.3",
     "react-test-renderer": "^16.8.6"
   },
