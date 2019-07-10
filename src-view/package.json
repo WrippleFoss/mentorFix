@@ -10,7 +10,7 @@
     "jest": "^24.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "semantic-ui-react": "^0.87.2"
+    "semantic-ui-react": "^0.87.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
