@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AppLayout from './layouts/AppLayout';
-import './assets/styles';
+import './assets/styles/index.scss';
 const App = () => {
   return(
     <React.Fragment >

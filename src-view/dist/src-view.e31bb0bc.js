@@ -70500,7 +70500,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _AppLayout = _interopRequireDefault(require("./layouts/AppLayout"));
 
-require("./assets/styles");
+require("./assets/styles/index.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -70510,7 +70510,7 @@ var App = function App() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./layouts/AppLayout":"layouts/AppLayout.jsx","./assets/styles":"assets/styles/index.scss"}],"css/login.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./layouts/AppLayout":"layouts/AppLayout.jsx","./assets/styles/index.scss":"assets/styles/index.scss"}],"css/login.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
