@@ -28377,7 +28377,81 @@ var createRoute = function createRoute(basepath) {
 var shouldNavigate = function shouldNavigate(event) {
   return !event.defaultPrevented && event.button === 0 && !(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
 }; ////////////////////////////////////////////////////////////////////////
-},{"react":"node_modules/react/index.js","warning":"node_modules/warning/browser.js","prop-types":"node_modules/prop-types/index.js","invariant":"node_modules/invariant/browser.js","create-react-context":"node_modules/create-react-context/lib/index.js","react-lifecycles-compat":"node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js","./lib/utils":"node_modules/@reach/router/es/lib/utils.js","./lib/history":"node_modules/@reach/router/es/lib/history.js"}],"components/app.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","warning":"node_modules/warning/browser.js","prop-types":"node_modules/prop-types/index.js","invariant":"node_modules/invariant/browser.js","create-react-context":"node_modules/create-react-context/lib/index.js","react-lifecycles-compat":"node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js","./lib/utils":"node_modules/@reach/router/es/lib/utils.js","./lib/history":"node_modules/@reach/router/es/lib/history.js"}],"assets/logo/master-logo.png":[function(require,module,exports) {
+module.exports = "/master-logo.629abb14.png";
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/styles/components/_navbar.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Navbar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28387,15 +28461,29 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _router = require("@reach/router");
+
+var _masterLogo = _interopRequireDefault(require("../assets/logo/master-logo.png"));
+
+require("../assets/styles/components/_navbar.scss");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App() {
-  return _react.default.createElement("h1", null, "Hello React!");
+var Navbar = function Navbar() {
+  return _react.default.createElement("nav", {
+    className: "navbar"
+  }, _react.default.createElement("div", {
+    className: "navbar-brand"
+  }, _react.default.createElement(_router.Link, {
+    to: "/"
+  }, _react.default.createElement("img", {
+    src: _masterLogo.default
+  }))));
 };
 
-var _default = App;
+var _default = Navbar;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/logo/master-logo.png":"assets/logo/master-logo.png","../assets/styles/components/_navbar.scss":"assets/styles/components/_navbar.scss"}],"node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
 function _extends() {
   module.exports = _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -70346,74 +70434,83 @@ var _StatisticLabel2 = _interopRequireDefault(require("./views/Statistic/Statist
 var _StatisticValue2 = _interopRequireDefault(require("./views/Statistic/StatisticValue"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./addons/Confirm":"node_modules/semantic-ui-react/dist/es/addons/Confirm/index.js","./addons/MountNode":"node_modules/semantic-ui-react/dist/es/addons/MountNode/index.js","./addons/Pagination":"node_modules/semantic-ui-react/dist/es/addons/Pagination/index.js","./addons/Pagination/PaginationItem":"node_modules/semantic-ui-react/dist/es/addons/Pagination/PaginationItem.js","./addons/Portal":"node_modules/semantic-ui-react/dist/es/addons/Portal/index.js","./addons/Portal/PortalInner":"node_modules/semantic-ui-react/dist/es/addons/Portal/PortalInner.js","./addons/Radio":"node_modules/semantic-ui-react/dist/es/addons/Radio/index.js","./addons/Ref":"node_modules/semantic-ui-react/dist/es/addons/Ref/index.js","./addons/Ref/RefFindNode":"node_modules/semantic-ui-react/dist/es/addons/Ref/RefFindNode.js","./addons/Ref/RefForward":"node_modules/semantic-ui-react/dist/es/addons/Ref/RefForward.js","./addons/Responsive":"node_modules/semantic-ui-react/dist/es/addons/Responsive/index.js","./addons/Select":"node_modules/semantic-ui-react/dist/es/addons/Select/index.js","./addons/TextArea":"node_modules/semantic-ui-react/dist/es/addons/TextArea/index.js","./addons/TransitionablePortal":"node_modules/semantic-ui-react/dist/es/addons/TransitionablePortal/index.js","./behaviors/Visibility":"node_modules/semantic-ui-react/dist/es/behaviors/Visibility/index.js","./collections/Breadcrumb":"node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/index.js","./collections/Breadcrumb/BreadcrumbDivider":"node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbDivider.js","./collections/Breadcrumb/BreadcrumbSection":"node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js","./collections/Form":"node_modules/semantic-ui-react/dist/es/collections/Form/index.js","./collections/Form/FormButton":"node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js","./collections/Form/FormCheckbox":"node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js","./collections/Form/FormDropdown":"node_modules/semantic-ui-react/dist/es/collections/Form/FormDropdown.js","./collections/Form/FormField":"node_modules/semantic-ui-react/dist/es/collections/Form/FormField.js","./collections/Form/FormGroup":"node_modules/semantic-ui-react/dist/es/collections/Form/FormGroup.js","./collections/Form/FormInput":"node_modules/semantic-ui-react/dist/es/collections/Form/FormInput.js","./collections/Form/FormRadio":"node_modules/semantic-ui-react/dist/es/collections/Form/FormRadio.js","./collections/Form/FormSelect":"node_modules/semantic-ui-react/dist/es/collections/Form/FormSelect.js","./collections/Form/FormTextArea":"node_modules/semantic-ui-react/dist/es/collections/Form/FormTextArea.js","./collections/Grid":"node_modules/semantic-ui-react/dist/es/collections/Grid/index.js","./collections/Grid/GridColumn":"node_modules/semantic-ui-react/dist/es/collections/Grid/GridColumn.js","./collections/Grid/GridRow":"node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js","./collections/Menu":"node_modules/semantic-ui-react/dist/es/collections/Menu/index.js","./collections/Menu/MenuHeader":"node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js","./collections/Menu/MenuItem":"node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js","./collections/Menu/MenuMenu":"node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js","./collections/Message":"node_modules/semantic-ui-react/dist/es/collections/Message/index.js","./collections/Message/MessageContent":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js","./collections/Message/MessageHeader":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js","./collections/Message/MessageItem":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageItem.js","./collections/Message/MessageList":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js","./collections/Table":"node_modules/semantic-ui-react/dist/es/collections/Table/index.js","./collections/Table/TableBody":"node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js","./collections/Table/TableCell":"node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js","./collections/Table/TableFooter":"node_modules/semantic-ui-react/dist/es/collections/Table/TableFooter.js","./collections/Table/TableHeader":"node_modules/semantic-ui-react/dist/es/collections/Table/TableHeader.js","./collections/Table/TableHeaderCell":"node_modules/semantic-ui-react/dist/es/collections/Table/TableHeaderCell.js","./collections/Table/TableRow":"node_modules/semantic-ui-react/dist/es/collections/Table/TableRow.js","./elements/Button/Button":"node_modules/semantic-ui-react/dist/es/elements/Button/Button.js","./elements/Button/ButtonContent":"node_modules/semantic-ui-react/dist/es/elements/Button/ButtonContent.js","./elements/Button/ButtonGroup":"node_modules/semantic-ui-react/dist/es/elements/Button/ButtonGroup.js","./elements/Button/ButtonOr":"node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js","./elements/Container":"node_modules/semantic-ui-react/dist/es/elements/Container/index.js","./elements/Divider":"node_modules/semantic-ui-react/dist/es/elements/Divider/index.js","./elements/Flag":"node_modules/semantic-ui-react/dist/es/elements/Flag/index.js","./elements/Header":"node_modules/semantic-ui-react/dist/es/elements/Header/index.js","./elements/Header/HeaderContent":"node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js","./elements/Header/HeaderSubheader":"node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js","./elements/Icon":"node_modules/semantic-ui-react/dist/es/elements/Icon/index.js","./elements/Icon/IconGroup":"node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js","./elements/Image":"node_modules/semantic-ui-react/dist/es/elements/Image/index.js","./elements/Image/ImageGroup":"node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js","./elements/Input":"node_modules/semantic-ui-react/dist/es/elements/Input/index.js","./elements/Label":"node_modules/semantic-ui-react/dist/es/elements/Label/index.js","./elements/Label/LabelDetail":"node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js","./elements/Label/LabelGroup":"node_modules/semantic-ui-react/dist/es/elements/Label/LabelGroup.js","./elements/List":"node_modules/semantic-ui-react/dist/es/elements/List/index.js","./elements/List/ListContent":"node_modules/semantic-ui-react/dist/es/elements/List/ListContent.js","./elements/List/ListDescription":"node_modules/semantic-ui-react/dist/es/elements/List/ListDescription.js","./elements/List/ListHeader":"node_modules/semantic-ui-react/dist/es/elements/List/ListHeader.js","./elements/List/ListIcon":"node_modules/semantic-ui-react/dist/es/elements/List/ListIcon.js","./elements/List/ListItem":"node_modules/semantic-ui-react/dist/es/elements/List/ListItem.js","./elements/List/ListList":"node_modules/semantic-ui-react/dist/es/elements/List/ListList.js","./elements/Loader":"node_modules/semantic-ui-react/dist/es/elements/Loader/index.js","./elements/Placeholder":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/index.js","./elements/Placeholder/PlaceholderHeader":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderHeader.js","./elements/Placeholder/PlaceholderImage":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderImage.js","./elements/Placeholder/PlaceholderLine":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderLine.js","./elements/Placeholder/PlaceholderParagraph":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderParagraph.js","./elements/Rail":"node_modules/semantic-ui-react/dist/es/elements/Rail/index.js","./elements/Reveal":"node_modules/semantic-ui-react/dist/es/elements/Reveal/index.js","./elements/Reveal/RevealContent":"node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js","./elements/Segment":"node_modules/semantic-ui-react/dist/es/elements/Segment/index.js","./elements/Segment/SegmentGroup":"node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js","./elements/Segment/SegmentInline":"node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentInline.js","./elements/Step":"node_modules/semantic-ui-react/dist/es/elements/Step/index.js","./elements/Step/StepContent":"node_modules/semantic-ui-react/dist/es/elements/Step/StepContent.js","./elements/Step/StepDescription":"node_modules/semantic-ui-react/dist/es/elements/Step/StepDescription.js","./elements/Step/StepGroup":"node_modules/semantic-ui-react/dist/es/elements/Step/StepGroup.js","./elements/Step/StepTitle":"node_modules/semantic-ui-react/dist/es/elements/Step/StepTitle.js","./modules/Accordion/Accordion":"node_modules/semantic-ui-react/dist/es/modules/Accordion/Accordion.js","./modules/Accordion/AccordionAccordion":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionAccordion.js","./modules/Accordion/AccordionContent":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionContent.js","./modules/Accordion/AccordionPanel":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionPanel.js","./modules/Accordion/AccordionTitle":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionTitle.js","./modules/Checkbox":"node_modules/semantic-ui-react/dist/es/modules/Checkbox/index.js","./modules/Dimmer":"node_modules/semantic-ui-react/dist/es/modules/Dimmer/index.js","./modules/Dimmer/DimmerDimmable":"node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerDimmable.js","./modules/Dimmer/DimmerInner":"node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerInner.js","./modules/Dropdown":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/index.js","./modules/Dropdown/DropdownDivider":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownDivider.js","./modules/Dropdown/DropdownHeader":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownHeader.js","./modules/Dropdown/DropdownItem":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownItem.js","./modules/Dropdown/DropdownMenu":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownMenu.js","./modules/Dropdown/DropdownSearchInput":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownSearchInput.js","./modules/Embed":"node_modules/semantic-ui-react/dist/es/modules/Embed/index.js","./modules/Modal":"node_modules/semantic-ui-react/dist/es/modules/Modal/index.js","./modules/Modal/ModalActions":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalActions.js","./modules/Modal/ModalContent":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalContent.js","./modules/Modal/ModalDescription":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalDescription.js","./modules/Modal/ModalHeader":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalHeader.js","./modules/Popup":"node_modules/semantic-ui-react/dist/es/modules/Popup/index.js","./modules/Popup/PopupContent":"node_modules/semantic-ui-react/dist/es/modules/Popup/PopupContent.js","./modules/Popup/PopupHeader":"node_modules/semantic-ui-react/dist/es/modules/Popup/PopupHeader.js","./modules/Progress":"node_modules/semantic-ui-react/dist/es/modules/Progress/index.js","./modules/Rating":"node_modules/semantic-ui-react/dist/es/modules/Rating/index.js","./modules/Rating/RatingIcon":"node_modules/semantic-ui-react/dist/es/modules/Rating/RatingIcon.js","./modules/Search":"node_modules/semantic-ui-react/dist/es/modules/Search/index.js","./modules/Search/SearchCategory":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategory.js","./modules/Search/SearchResult":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchResult.js","./modules/Search/SearchResults":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchResults.js","./modules/Sidebar":"node_modules/semantic-ui-react/dist/es/modules/Sidebar/index.js","./modules/Sidebar/SidebarPushable":"node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPushable.js","./modules/Sidebar/SidebarPusher":"node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPusher.js","./modules/Sticky":"node_modules/semantic-ui-react/dist/es/modules/Sticky/index.js","./modules/Tab":"node_modules/semantic-ui-react/dist/es/modules/Tab/index.js","./modules/Tab/TabPane":"node_modules/semantic-ui-react/dist/es/modules/Tab/TabPane.js","./modules/Transition":"node_modules/semantic-ui-react/dist/es/modules/Transition/index.js","./modules/Transition/TransitionGroup":"node_modules/semantic-ui-react/dist/es/modules/Transition/TransitionGroup.js","./views/Advertisement":"node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js","./views/Card/Card":"node_modules/semantic-ui-react/dist/es/views/Card/Card.js","./views/Card/CardContent":"node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js","./views/Card/CardDescription":"node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js","./views/Card/CardGroup":"node_modules/semantic-ui-react/dist/es/views/Card/CardGroup.js","./views/Card/CardHeader":"node_modules/semantic-ui-react/dist/es/views/Card/CardHeader.js","./views/Card/CardMeta":"node_modules/semantic-ui-react/dist/es/views/Card/CardMeta.js","./views/Comment":"node_modules/semantic-ui-react/dist/es/views/Comment/index.js","./views/Comment/CommentAction":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentAction.js","./views/Comment/CommentActions":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentActions.js","./views/Comment/CommentAuthor":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentAuthor.js","./views/Comment/CommentAvatar":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentAvatar.js","./views/Comment/CommentContent":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentContent.js","./views/Comment/CommentGroup":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentGroup.js","./views/Comment/CommentMetadata":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentMetadata.js","./views/Comment/CommentText":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentText.js","./views/Feed":"node_modules/semantic-ui-react/dist/es/views/Feed/index.js","./views/Feed/FeedContent":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedContent.js","./views/Feed/FeedDate":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedDate.js","./views/Feed/FeedEvent":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedEvent.js","./views/Feed/FeedExtra":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedExtra.js","./views/Feed/FeedLabel":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedLabel.js","./views/Feed/FeedLike":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedLike.js","./views/Feed/FeedMeta":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedMeta.js","./views/Feed/FeedSummary":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedSummary.js","./views/Feed/FeedUser":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedUser.js","./views/Item":"node_modules/semantic-ui-react/dist/es/views/Item/index.js","./views/Item/ItemContent":"node_modules/semantic-ui-react/dist/es/views/Item/ItemContent.js","./views/Item/ItemDescription":"node_modules/semantic-ui-react/dist/es/views/Item/ItemDescription.js","./views/Item/ItemExtra":"node_modules/semantic-ui-react/dist/es/views/Item/ItemExtra.js","./views/Item/ItemGroup":"node_modules/semantic-ui-react/dist/es/views/Item/ItemGroup.js","./views/Item/ItemHeader":"node_modules/semantic-ui-react/dist/es/views/Item/ItemHeader.js","./views/Item/ItemImage":"node_modules/semantic-ui-react/dist/es/views/Item/ItemImage.js","./views/Item/ItemMeta":"node_modules/semantic-ui-react/dist/es/views/Item/ItemMeta.js","./views/Statistic":"node_modules/semantic-ui-react/dist/es/views/Statistic/index.js","./views/Statistic/StatisticGroup":"node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticGroup.js","./views/Statistic/StatisticLabel":"node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticLabel.js","./views/Statistic/StatisticValue":"node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticValue.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+},{"./addons/Confirm":"node_modules/semantic-ui-react/dist/es/addons/Confirm/index.js","./addons/MountNode":"node_modules/semantic-ui-react/dist/es/addons/MountNode/index.js","./addons/Pagination":"node_modules/semantic-ui-react/dist/es/addons/Pagination/index.js","./addons/Pagination/PaginationItem":"node_modules/semantic-ui-react/dist/es/addons/Pagination/PaginationItem.js","./addons/Portal":"node_modules/semantic-ui-react/dist/es/addons/Portal/index.js","./addons/Portal/PortalInner":"node_modules/semantic-ui-react/dist/es/addons/Portal/PortalInner.js","./addons/Radio":"node_modules/semantic-ui-react/dist/es/addons/Radio/index.js","./addons/Ref":"node_modules/semantic-ui-react/dist/es/addons/Ref/index.js","./addons/Ref/RefFindNode":"node_modules/semantic-ui-react/dist/es/addons/Ref/RefFindNode.js","./addons/Ref/RefForward":"node_modules/semantic-ui-react/dist/es/addons/Ref/RefForward.js","./addons/Responsive":"node_modules/semantic-ui-react/dist/es/addons/Responsive/index.js","./addons/Select":"node_modules/semantic-ui-react/dist/es/addons/Select/index.js","./addons/TextArea":"node_modules/semantic-ui-react/dist/es/addons/TextArea/index.js","./addons/TransitionablePortal":"node_modules/semantic-ui-react/dist/es/addons/TransitionablePortal/index.js","./behaviors/Visibility":"node_modules/semantic-ui-react/dist/es/behaviors/Visibility/index.js","./collections/Breadcrumb":"node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/index.js","./collections/Breadcrumb/BreadcrumbDivider":"node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbDivider.js","./collections/Breadcrumb/BreadcrumbSection":"node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js","./collections/Form":"node_modules/semantic-ui-react/dist/es/collections/Form/index.js","./collections/Form/FormButton":"node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js","./collections/Form/FormCheckbox":"node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js","./collections/Form/FormDropdown":"node_modules/semantic-ui-react/dist/es/collections/Form/FormDropdown.js","./collections/Form/FormField":"node_modules/semantic-ui-react/dist/es/collections/Form/FormField.js","./collections/Form/FormGroup":"node_modules/semantic-ui-react/dist/es/collections/Form/FormGroup.js","./collections/Form/FormInput":"node_modules/semantic-ui-react/dist/es/collections/Form/FormInput.js","./collections/Form/FormRadio":"node_modules/semantic-ui-react/dist/es/collections/Form/FormRadio.js","./collections/Form/FormSelect":"node_modules/semantic-ui-react/dist/es/collections/Form/FormSelect.js","./collections/Form/FormTextArea":"node_modules/semantic-ui-react/dist/es/collections/Form/FormTextArea.js","./collections/Grid":"node_modules/semantic-ui-react/dist/es/collections/Grid/index.js","./collections/Grid/GridColumn":"node_modules/semantic-ui-react/dist/es/collections/Grid/GridColumn.js","./collections/Grid/GridRow":"node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js","./collections/Menu":"node_modules/semantic-ui-react/dist/es/collections/Menu/index.js","./collections/Menu/MenuHeader":"node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js","./collections/Menu/MenuItem":"node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js","./collections/Menu/MenuMenu":"node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js","./collections/Message":"node_modules/semantic-ui-react/dist/es/collections/Message/index.js","./collections/Message/MessageContent":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js","./collections/Message/MessageHeader":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js","./collections/Message/MessageItem":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageItem.js","./collections/Message/MessageList":"node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js","./collections/Table":"node_modules/semantic-ui-react/dist/es/collections/Table/index.js","./collections/Table/TableBody":"node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js","./collections/Table/TableCell":"node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js","./collections/Table/TableFooter":"node_modules/semantic-ui-react/dist/es/collections/Table/TableFooter.js","./collections/Table/TableHeader":"node_modules/semantic-ui-react/dist/es/collections/Table/TableHeader.js","./collections/Table/TableHeaderCell":"node_modules/semantic-ui-react/dist/es/collections/Table/TableHeaderCell.js","./collections/Table/TableRow":"node_modules/semantic-ui-react/dist/es/collections/Table/TableRow.js","./elements/Button/Button":"node_modules/semantic-ui-react/dist/es/elements/Button/Button.js","./elements/Button/ButtonContent":"node_modules/semantic-ui-react/dist/es/elements/Button/ButtonContent.js","./elements/Button/ButtonGroup":"node_modules/semantic-ui-react/dist/es/elements/Button/ButtonGroup.js","./elements/Button/ButtonOr":"node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js","./elements/Container":"node_modules/semantic-ui-react/dist/es/elements/Container/index.js","./elements/Divider":"node_modules/semantic-ui-react/dist/es/elements/Divider/index.js","./elements/Flag":"node_modules/semantic-ui-react/dist/es/elements/Flag/index.js","./elements/Header":"node_modules/semantic-ui-react/dist/es/elements/Header/index.js","./elements/Header/HeaderContent":"node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js","./elements/Header/HeaderSubheader":"node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js","./elements/Icon":"node_modules/semantic-ui-react/dist/es/elements/Icon/index.js","./elements/Icon/IconGroup":"node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js","./elements/Image":"node_modules/semantic-ui-react/dist/es/elements/Image/index.js","./elements/Image/ImageGroup":"node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js","./elements/Input":"node_modules/semantic-ui-react/dist/es/elements/Input/index.js","./elements/Label":"node_modules/semantic-ui-react/dist/es/elements/Label/index.js","./elements/Label/LabelDetail":"node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js","./elements/Label/LabelGroup":"node_modules/semantic-ui-react/dist/es/elements/Label/LabelGroup.js","./elements/List":"node_modules/semantic-ui-react/dist/es/elements/List/index.js","./elements/List/ListContent":"node_modules/semantic-ui-react/dist/es/elements/List/ListContent.js","./elements/List/ListDescription":"node_modules/semantic-ui-react/dist/es/elements/List/ListDescription.js","./elements/List/ListHeader":"node_modules/semantic-ui-react/dist/es/elements/List/ListHeader.js","./elements/List/ListIcon":"node_modules/semantic-ui-react/dist/es/elements/List/ListIcon.js","./elements/List/ListItem":"node_modules/semantic-ui-react/dist/es/elements/List/ListItem.js","./elements/List/ListList":"node_modules/semantic-ui-react/dist/es/elements/List/ListList.js","./elements/Loader":"node_modules/semantic-ui-react/dist/es/elements/Loader/index.js","./elements/Placeholder":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/index.js","./elements/Placeholder/PlaceholderHeader":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderHeader.js","./elements/Placeholder/PlaceholderImage":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderImage.js","./elements/Placeholder/PlaceholderLine":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderLine.js","./elements/Placeholder/PlaceholderParagraph":"node_modules/semantic-ui-react/dist/es/elements/Placeholder/PlaceholderParagraph.js","./elements/Rail":"node_modules/semantic-ui-react/dist/es/elements/Rail/index.js","./elements/Reveal":"node_modules/semantic-ui-react/dist/es/elements/Reveal/index.js","./elements/Reveal/RevealContent":"node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js","./elements/Segment":"node_modules/semantic-ui-react/dist/es/elements/Segment/index.js","./elements/Segment/SegmentGroup":"node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js","./elements/Segment/SegmentInline":"node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentInline.js","./elements/Step":"node_modules/semantic-ui-react/dist/es/elements/Step/index.js","./elements/Step/StepContent":"node_modules/semantic-ui-react/dist/es/elements/Step/StepContent.js","./elements/Step/StepDescription":"node_modules/semantic-ui-react/dist/es/elements/Step/StepDescription.js","./elements/Step/StepGroup":"node_modules/semantic-ui-react/dist/es/elements/Step/StepGroup.js","./elements/Step/StepTitle":"node_modules/semantic-ui-react/dist/es/elements/Step/StepTitle.js","./modules/Accordion/Accordion":"node_modules/semantic-ui-react/dist/es/modules/Accordion/Accordion.js","./modules/Accordion/AccordionAccordion":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionAccordion.js","./modules/Accordion/AccordionContent":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionContent.js","./modules/Accordion/AccordionPanel":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionPanel.js","./modules/Accordion/AccordionTitle":"node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionTitle.js","./modules/Checkbox":"node_modules/semantic-ui-react/dist/es/modules/Checkbox/index.js","./modules/Dimmer":"node_modules/semantic-ui-react/dist/es/modules/Dimmer/index.js","./modules/Dimmer/DimmerDimmable":"node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerDimmable.js","./modules/Dimmer/DimmerInner":"node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerInner.js","./modules/Dropdown":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/index.js","./modules/Dropdown/DropdownDivider":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownDivider.js","./modules/Dropdown/DropdownHeader":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownHeader.js","./modules/Dropdown/DropdownItem":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownItem.js","./modules/Dropdown/DropdownMenu":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownMenu.js","./modules/Dropdown/DropdownSearchInput":"node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownSearchInput.js","./modules/Embed":"node_modules/semantic-ui-react/dist/es/modules/Embed/index.js","./modules/Modal":"node_modules/semantic-ui-react/dist/es/modules/Modal/index.js","./modules/Modal/ModalActions":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalActions.js","./modules/Modal/ModalContent":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalContent.js","./modules/Modal/ModalDescription":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalDescription.js","./modules/Modal/ModalHeader":"node_modules/semantic-ui-react/dist/es/modules/Modal/ModalHeader.js","./modules/Popup":"node_modules/semantic-ui-react/dist/es/modules/Popup/index.js","./modules/Popup/PopupContent":"node_modules/semantic-ui-react/dist/es/modules/Popup/PopupContent.js","./modules/Popup/PopupHeader":"node_modules/semantic-ui-react/dist/es/modules/Popup/PopupHeader.js","./modules/Progress":"node_modules/semantic-ui-react/dist/es/modules/Progress/index.js","./modules/Rating":"node_modules/semantic-ui-react/dist/es/modules/Rating/index.js","./modules/Rating/RatingIcon":"node_modules/semantic-ui-react/dist/es/modules/Rating/RatingIcon.js","./modules/Search":"node_modules/semantic-ui-react/dist/es/modules/Search/index.js","./modules/Search/SearchCategory":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategory.js","./modules/Search/SearchResult":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchResult.js","./modules/Search/SearchResults":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchResults.js","./modules/Sidebar":"node_modules/semantic-ui-react/dist/es/modules/Sidebar/index.js","./modules/Sidebar/SidebarPushable":"node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPushable.js","./modules/Sidebar/SidebarPusher":"node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPusher.js","./modules/Sticky":"node_modules/semantic-ui-react/dist/es/modules/Sticky/index.js","./modules/Tab":"node_modules/semantic-ui-react/dist/es/modules/Tab/index.js","./modules/Tab/TabPane":"node_modules/semantic-ui-react/dist/es/modules/Tab/TabPane.js","./modules/Transition":"node_modules/semantic-ui-react/dist/es/modules/Transition/index.js","./modules/Transition/TransitionGroup":"node_modules/semantic-ui-react/dist/es/modules/Transition/TransitionGroup.js","./views/Advertisement":"node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js","./views/Card/Card":"node_modules/semantic-ui-react/dist/es/views/Card/Card.js","./views/Card/CardContent":"node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js","./views/Card/CardDescription":"node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js","./views/Card/CardGroup":"node_modules/semantic-ui-react/dist/es/views/Card/CardGroup.js","./views/Card/CardHeader":"node_modules/semantic-ui-react/dist/es/views/Card/CardHeader.js","./views/Card/CardMeta":"node_modules/semantic-ui-react/dist/es/views/Card/CardMeta.js","./views/Comment":"node_modules/semantic-ui-react/dist/es/views/Comment/index.js","./views/Comment/CommentAction":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentAction.js","./views/Comment/CommentActions":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentActions.js","./views/Comment/CommentAuthor":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentAuthor.js","./views/Comment/CommentAvatar":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentAvatar.js","./views/Comment/CommentContent":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentContent.js","./views/Comment/CommentGroup":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentGroup.js","./views/Comment/CommentMetadata":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentMetadata.js","./views/Comment/CommentText":"node_modules/semantic-ui-react/dist/es/views/Comment/CommentText.js","./views/Feed":"node_modules/semantic-ui-react/dist/es/views/Feed/index.js","./views/Feed/FeedContent":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedContent.js","./views/Feed/FeedDate":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedDate.js","./views/Feed/FeedEvent":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedEvent.js","./views/Feed/FeedExtra":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedExtra.js","./views/Feed/FeedLabel":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedLabel.js","./views/Feed/FeedLike":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedLike.js","./views/Feed/FeedMeta":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedMeta.js","./views/Feed/FeedSummary":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedSummary.js","./views/Feed/FeedUser":"node_modules/semantic-ui-react/dist/es/views/Feed/FeedUser.js","./views/Item":"node_modules/semantic-ui-react/dist/es/views/Item/index.js","./views/Item/ItemContent":"node_modules/semantic-ui-react/dist/es/views/Item/ItemContent.js","./views/Item/ItemDescription":"node_modules/semantic-ui-react/dist/es/views/Item/ItemDescription.js","./views/Item/ItemExtra":"node_modules/semantic-ui-react/dist/es/views/Item/ItemExtra.js","./views/Item/ItemGroup":"node_modules/semantic-ui-react/dist/es/views/Item/ItemGroup.js","./views/Item/ItemHeader":"node_modules/semantic-ui-react/dist/es/views/Item/ItemHeader.js","./views/Item/ItemImage":"node_modules/semantic-ui-react/dist/es/views/Item/ItemImage.js","./views/Item/ItemMeta":"node_modules/semantic-ui-react/dist/es/views/Item/ItemMeta.js","./views/Statistic":"node_modules/semantic-ui-react/dist/es/views/Statistic/index.js","./views/Statistic/StatisticGroup":"node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticGroup.js","./views/Statistic/StatisticLabel":"node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticLabel.js","./views/Statistic/StatisticValue":"node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticValue.js"}],"assets/hero-image.png":[function(require,module,exports) {
+module.exports = "/hero-image.c4ef0636.png";
+},{}],"assets/styles/components/_layout.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"layouts/AppLayout.jsx":[function(require,module,exports) {
+"use strict";
 
-  return bundleURL;
-}
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+var _react = _interopRequireDefault(require("react"));
 
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
+var _Navbar = _interopRequireDefault(require("../components/Navbar"));
 
-  return '/';
-}
+var _semanticUiReact = require("semantic-ui-react");
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
+var _heroImage = _interopRequireDefault(require("../assets/hero-image.png"));
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
+require("../assets/styles/components/_layout.scss");
 
-function updateLink(link) {
-  var newLink = link.cloneNode();
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-  newLink.onload = function () {
-    link.remove();
-  };
+var AppLayout = function AppLayout() {
+  return _react.default.createElement("div", {
+    className: "root"
+  }, _react.default.createElement(_Navbar.default, null), _react.default.createElement("div", {
+    className: "hero"
+  }, _react.default.createElement("div", {
+    className: "hero-text"
+  }, _react.default.createElement("h3", null, _react.default.createElement("p", null, "Connect with ", _react.default.createElement("strong", null, "Mentors")), _react.default.createElement("p", null, "to kickstart your Career")), _react.default.createElement("div", {
+    className: "mini-text"
+  }, _react.default.createElement("p", null, "Every expert was once a beginner. Get"), _react.default.createElement("p", null, "guidance, support & mentorship from"), _react.default.createElement("p", null, "skilled mentors & reach greater heights.")), _react.default.createElement(_semanticUiReact.Button, {
+    color: "green",
+    className: "hero-login-button"
+  }, "Sign up")), _react.default.createElement("div", {
+    className: "hero-image"
+  }, _react.default.createElement("img", {
+    src: _heroImage.default,
+    alt: "hero-image"
+  }))));
+};
 
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
+var _default = AppLayout;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../components/Navbar":"components/Navbar.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/hero-image.png":"assets/hero-image.png","../assets/styles/components/_layout.scss":"assets/styles/components/_layout.scss"}],"assets/styles/index.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
 
-var cssTimeout = null;
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app.js":[function(require,module,exports) {
+"use strict";
 
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
+var _react = _interopRequireDefault(require("react"));
 
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
+var _AppLayout = _interopRequireDefault(require("./layouts/AppLayout"));
 
-    cssTimeout = null;
-  }, 50);
-}
+require("./assets/styles");
 
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/login.css":[function(require,module,exports) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var App = function App() {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_AppLayout.default, null));
+};
+
+var _default = App;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./layouts/AppLayout":"layouts/AppLayout.jsx","./assets/styles":"assets/styles/index.scss"}],"css/login.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -70464,7 +70561,7 @@ var _reactDom = require("react-dom");
 
 var _router = require("@reach/router");
 
-var _app = _interopRequireDefault(require("./components/app"));
+var _app = _interopRequireDefault(require("./app"));
 
 var _Login = _interopRequireDefault(require("./components/login/Login"));
 
@@ -70486,7 +70583,7 @@ var routes = function routes() {
 
 var _default = routes;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","@reach/router":"node_modules/@reach/router/es/index.js","./components/app":"components/app.js","./components/login/Login":"components/login/Login.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","@reach/router":"node_modules/@reach/router/es/index.js","./app":"app.js","./components/login/Login":"components/login/Login.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -70526,7 +70623,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54441" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,0 +1,19 @@
+@import 'variables';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root{
+    height: 100%;
+}
+
+
+#root{
+    background-image: linear-gradient(to right, var(--violet), var(--green));
+    // background-image: linear-gradient(to right, red, orange);
+}
