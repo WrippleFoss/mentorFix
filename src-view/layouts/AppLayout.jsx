@@ -21,7 +21,7 @@ const AppLayout = () => {
                         <p>guidance, support & mentorship from</p>
                         <p>skilled mentors & reach greater heights.</p>
                     </div>
-                    <Button color='green' className="hero-login-button">Sign up</Button>
+                    <Button color='green' className="hero-login-button">Sign-up</Button>
                 </div>
                 <div className="hero-image">
                     <img src={HeroImage} alt="hero-image"/>
