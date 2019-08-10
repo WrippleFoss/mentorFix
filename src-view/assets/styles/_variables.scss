@@ -1,0 +1,27 @@
+
+$primary-violet: hsl(277, 49%, 52%);
+$primary-green: #28E2BC;
+
+:root {
+    --white: hsl(0, 0%, 98%);
+    --black: hsl(0, 0%, 12%);
+    --gray: hsl(0, 0%, 65%);
+    --space: 1.25rem;
+    --ruby: #ff9494;
+    --violet: #{$primary-violet};
+    --light-violet: #ECCCFF;
+    --green: #{$primary-green};
+    --dark-blue: #186c8a;
+    --light-blue: #e6f4fa;
+    --apple-green: #48b049;
+    --moss-green: #a4d6a5;
+    --light-lime-green: #f1faf1;
+    --font: 'Rubik', "Open Sans";
+    --max-width: 65rem;
+    --border-radius: 5px;
+    --card-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.08),
+        0 1px 2px 0 hsla(0, 0%, 0%, 0.04);
+    --icon-close: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg>');
+    --icon-hamburger: url('data:image/svg+xml,<svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>');
+    --icon-deals-info: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></svg>');
+}

@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
     "@babel/preset-react": "^7.0.0",
     "@reach/router": "^1.2.1",
-    "babel-preset-env": "^1.7.0",
+    "babel-core": "^7.0.0-beta.44",
     "babel-preset-react": "^6.24.1",
     "jest": "^24.8.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "semantic-ui-react": "^0.87.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "husky": "^2.4.1",
@@ -22,7 +24,8 @@
   },
   "scripts": {
     "test": "jest --config=jest.config.json",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC"
