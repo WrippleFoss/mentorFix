@@ -25,7 +25,8 @@
   "scripts": {
     "test": "jest --config=jest.config.json",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "aws s3 sync dist/ s3://mentofix-dev"
   },
   "author": "",
   "license": "ISC"
