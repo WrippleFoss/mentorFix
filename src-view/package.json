@@ -20,7 +20,7 @@
     "enzyme-adapter-react-16": "^1.13.1",
     "husky": "^3.0.4",
     "parcel-bundler": "^1.12.3",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.10.0"
   },
   "scripts": {
     "test": "jest --config=jest.config.json",
