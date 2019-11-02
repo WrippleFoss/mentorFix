@@ -1,0 +1,6 @@
+@import '../variables';
+
+.landingContainer {
+    background-image: linear-gradient(to right, var(--violet), var(--green));
+    height: 100vh;
+}

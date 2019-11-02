@@ -1,17 +1,11 @@
-import React from 'react';
-import { render } from "react-dom";
-import { Router, Link } from "@reach/router";
-import App from './app';
-import Login from './components/login/Login'
+import React from 'react'
+import LandingView from './views/LandingView'
+import { Router } from '@reach/router'
 
-let Dash = () => <div>Dash</div>
-
-const routes = ()=> (
-  <Router>
-    <App path="/" />
-    <Dash path="dashboard" />
-    <Login path="/login" />
-  </Router>
-)
-
-export default routes;
+export default () => {
+  return (
+    <Router>
+      <LandingView path='/' />
+    </Router>
+  )
+}

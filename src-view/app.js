@@ -1,13 +1,9 @@
-import React from 'react';
+import React from 'react'
+// import './assets/styles/index.scss'
+import Routes from './Routes'
 
-import AppLayout from './layouts/AppLayout';
-import './assets/styles/index.scss';
 const App = () => {
-  return(
-    <React.Fragment >
-      <AppLayout />
-    </React.Fragment>
-  )
-};
+  return <Routes />
+}
 
-export default App;
+export default App
