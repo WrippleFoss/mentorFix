@@ -1,6 +1,50 @@
 @import '../variables';
+@import '../mixins';
+
 
 .landingContainer {
     background-image: linear-gradient(to right, var(--violet), var(--green));
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .landingNavbar {
+        // justify-self: flex-start;
+        padding: 1rem;
+    }
+
+    .heroDiv {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap-reverse;
+    }
+
+    .heroText {
+        >h3 {
+            font-size: 2rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        .landingButton {
+            margin-top: 1rem;
+        }
+
+        .greenButton {
+            width: 100%;
+        }
+    }
+
+    .heroImage {
+        display: none;
+
+        @include for-desktop {
+            display: inline;
+        }
+    }
 }
