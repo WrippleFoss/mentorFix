@@ -77406,39 +77406,19 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./views/LandingView":"views/LandingView.jsx","@reach/router":"node_modules/@reach/router/es/index.js"}],"app.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-require("./assets/styles/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var App = function App() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_AppLayout.default, null));
-};
-
-var _default = App;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","./layouts/AppLayout":"layouts/AppLayout.jsx","./assets/styles/index.scss":"assets/styles/index.scss"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./views/LandingView":"views/LandingView.jsx","@reach/router":"node_modules/@reach/router/es/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _app = _interopRequireDefault(require("./app"));
+var _Routes = _interopRequireDefault(require("./Routes"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement(_app.default, null), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"app.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render(_react.default.createElement(_Routes.default, null), document.getElementById("root"));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Routes":"Routes.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -77466,7 +77446,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63539" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53029" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
