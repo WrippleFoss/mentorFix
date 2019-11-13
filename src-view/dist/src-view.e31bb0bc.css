@@ -4,6 +4,7 @@
   --gray: hsl(0, 0%, 65%);
   --space: 1.25rem;
   --ruby: #ff9494;
+  --red: #ee534c;
   --violet: #9349c1;
   --light-violet: #ECCCFF;
   --green: #28E2BC;
@@ -53,6 +54,16 @@
 
 ._navbar_bbd38 {
   display: flex; }
+  ._navbar_bbd38 ._navRight_bbd38 {
+    font-weight: 600;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-top: 0.5rem; }
+
+._AppLayout_c54d8 ._navbar_c54d8 {
+  padding: 1rem;
+  box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.6); }
 
 
 /*# sourceMappingURL=/src-view.e31bb0bc.css.map */

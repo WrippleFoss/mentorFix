@@ -1,10 +1,12 @@
-import React from 'react';
-import Formik from 'formik';
+import React from "react";
+import Formik from "formik";
 
 const LoginForm = () => {
-    return(
-        <>
-          <h1>React stuff</h1>
-        </>
-    )
-}
+  return (
+    <>
+      <h1>React stuff</h1>
+    </>
+  );
+};
+
+export default LoginForm;

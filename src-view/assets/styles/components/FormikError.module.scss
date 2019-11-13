@@ -1,0 +1,11 @@
+@import '../variables';
+
+.error {
+    transition: all ease 0.3s;
+    color: var(--red);
+    margin: 0 0.5rem;
+
+    &.hasError {
+        margin: 0.5rem;
+    }
+}
