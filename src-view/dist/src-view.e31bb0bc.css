@@ -61,9 +61,58 @@
     justify-content: flex-end;
     margin-top: 0.5rem; }
 
-._AppLayout_c54d8 ._navbar_c54d8 {
-  padding: 1rem;
-  box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.6); }
+._signUpDiv_80ad4 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-self: center;
+  flex-shrink: 1;
+  padding: 5rem 0rem;
+  width: 80%;
+  max-width: 36rem; }
+  ._signUpDiv_80ad4 > h1 {
+    align-self: center;
+    font-weight: 400; }
+  @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
+    ._signUpDiv_80ad4 {
+      box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
+      padding: 5rem 3rem;
+      width: 50%; } }
+  ._signUpDivWrapper_80ad4 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; }
+  ._signUpDiv_80ad4 ._signUpForm_80ad4 {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 0; }
+    ._signUpDiv_80ad4 ._signUpForm_80ad4 > button {
+      width: 100%;
+      margin: 2rem 0 0 0; }
+
+._AppLayout_c54d8 {
+  display: flex;
+  flex-direction: column; }
+  ._AppLayout_c54d8 ._navbar_c54d8 {
+    padding: 1rem;
+    box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.6); }
+  ._AppLayout_c54d8 ._childContent_c54d8 {
+    position: relative;
+    flex: 1;
+    padding: 0 1rem;
+    margin-bottom: 2rem; }
+    @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
+      ._AppLayout_c54d8 ._childContent_c54d8 {
+        padding: 0 1.625rem; } }
+    ._AppLayout_c54d8 ._childContentWrapper_c54d8 {
+      display: flex;
+      flex-flow: column;
+      min-height: 90vh; }
+      @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
+        ._AppLayout_c54d8 ._childContentWrapper_c54d8 {
+          flex-flow: row; } }
 
 
 /*# sourceMappingURL=/src-view.e31bb0bc.css.map */

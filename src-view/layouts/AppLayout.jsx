@@ -9,7 +9,9 @@ const AppLayout = props => {
       <div className={styles.navbar}>
         <Navbar />
       </div>
-      {props.children}
+      <div className={styles.childContentWrapper}>
+        <div className={styles.childContent}>{props.children}</div>
+      </div>
     </div>
   );
 };
