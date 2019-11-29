@@ -2597,7 +2597,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":"node_modules/react/cjs/react.development.js"}],"node_modules/scheduler/cjs/scheduler.development.js":[function(require,module,exports) {
+},{"./cjs/react.development.js":"node_modules/react/cjs/react.development.js"}],"node_modules/react-dom/node_modules/scheduler/cjs/scheduler.development.js":[function(require,module,exports) {
 /** @license React v0.16.2
  * scheduler.development.js
  *
@@ -3622,7 +3622,7 @@ if ("development" !== "production") {
     exports.unstable_Profiling = unstable_Profiling;
   })();
 }
-},{}],"node_modules/scheduler/index.js":[function(require,module,exports) {
+},{}],"node_modules/react-dom/node_modules/scheduler/index.js":[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -3630,7 +3630,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/scheduler.development.js');
 }
-},{"./cjs/scheduler.development.js":"node_modules/scheduler/cjs/scheduler.development.js"}],"node_modules/scheduler/cjs/scheduler-tracing.development.js":[function(require,module,exports) {
+},{"./cjs/scheduler.development.js":"node_modules/react-dom/node_modules/scheduler/cjs/scheduler.development.js"}],"node_modules/react-dom/node_modules/scheduler/cjs/scheduler-tracing.development.js":[function(require,module,exports) {
 /** @license React v0.16.2
  * scheduler-tracing.development.js
  *
@@ -4040,7 +4040,7 @@ if ("development" !== "production") {
     exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
-},{}],"node_modules/scheduler/tracing.js":[function(require,module,exports) {
+},{}],"node_modules/react-dom/node_modules/scheduler/tracing.js":[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -4048,7 +4048,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/scheduler-tracing.development.js');
 }
-},{"./cjs/scheduler-tracing.development.js":"node_modules/scheduler/cjs/scheduler-tracing.development.js"}],"node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports) {
+},{"./cjs/scheduler-tracing.development.js":"node_modules/react-dom/node_modules/scheduler/cjs/scheduler-tracing.development.js"}],"node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports) {
 /** @license React v16.10.2
  * react-dom.development.js
  *
@@ -31937,7 +31937,7 @@ if ("development" !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":"node_modules/react/index.js","object-assign":"node_modules/object-assign/index.js","scheduler":"node_modules/scheduler/index.js","prop-types/checkPropTypes":"node_modules/prop-types/checkPropTypes.js","scheduler/tracing":"node_modules/scheduler/tracing.js"}],"node_modules/react-dom/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","object-assign":"node_modules/object-assign/index.js","scheduler":"node_modules/react-dom/node_modules/scheduler/index.js","prop-types/checkPropTypes":"node_modules/prop-types/checkPropTypes.js","scheduler/tracing":"node_modules/react-dom/node_modules/scheduler/tracing.js"}],"node_modules/react-dom/index.js":[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -77208,78 +77208,7 @@ var shouldNavigate = function shouldNavigate(event) {
 }; ////////////////////////////////////////////////////////////////////////
 },{"react":"node_modules/react/index.js","warning":"node_modules/@reach/router/node_modules/warning/browser.js","prop-types":"node_modules/prop-types/index.js","invariant":"node_modules/invariant/browser.js","create-react-context":"node_modules/create-react-context/lib/index.js","react-lifecycles-compat":"node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js","./lib/utils":"node_modules/@reach/router/es/lib/utils.js","./lib/history":"node_modules/@reach/router/es/lib/history.js"}],"assets/hero-image.png":[function(require,module,exports) {
 module.exports = "/hero-image.c4ef0636.png";
-},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/styles/components/LandingView.module.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
+},{}],"assets/styles/components/LandingView.module.scss":[function(require,module,exports) {
 module.exports = {
   "landingContainer": "_landingContainer_355d4",
   "landingNavbar": "_landingNavbar_355d4",
@@ -77289,17 +77218,14 @@ module.exports = {
   "greenButton": "_greenButton_355d4",
   "heroImage": "_heroImage_355d4"
 };
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/logo/master-logo.png":[function(require,module,exports) {
+},{}],"assets/logo/master-logo.png":[function(require,module,exports) {
 module.exports = "/master-logo.629abb14.png";
 },{}],"assets/styles/components/Navbar.module.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
 module.exports = {
-  "navbar": "_navbar_bbd38"
+  "navbar": "_navbar_bbd38",
+  "navRight": "_navRight_bbd38"
 };
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Navbar.js":[function(require,module,exports) {
+},{}],"components/Navbar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77310,6 +77236,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _router = require("@reach/router");
+
+var _semanticUiReact = require("semantic-ui-react");
 
 var _masterLogo = _interopRequireDefault(require("../assets/logo/master-logo.png"));
 
@@ -77326,12 +77254,19 @@ var Navbar = function Navbar() {
     to: "/"
   }, _react.default.createElement("img", {
     src: _masterLogo.default
-  }))));
+  }))), _react.default.createElement("div", {
+    className: _NavbarModule.default.navRight
+  }, _react.default.createElement(_router.Link, {
+    to: "/login"
+  }, _react.default.createElement(_semanticUiReact.Button, {
+    basic: true,
+    color: "blue"
+  }, "Login"))));
 };
 
 var _default = Navbar;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/logo/master-logo.png":"assets/logo/master-logo.png","../assets/styles/components/Navbar.module.scss":"assets/styles/components/Navbar.module.scss"}],"views/LandingView.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@reach/router":"node_modules/@reach/router/es/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/logo/master-logo.png":"assets/logo/master-logo.png","../assets/styles/components/Navbar.module.scss":"assets/styles/components/Navbar.module.scss"}],"views/LandingView.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77383,7 +77318,153 @@ var LandingView = function LandingView() {
 
 var _default = LandingView;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/hero-image.png":"assets/hero-image.png","../assets/styles/components/LandingView.module.scss":"assets/styles/components/LandingView.module.scss","../components/Navbar":"components/Navbar.js"}],"Routes.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/hero-image.png":"assets/hero-image.png","../assets/styles/components/LandingView.module.scss":"assets/styles/components/LandingView.module.scss","../components/Navbar":"components/Navbar.js"}],"assets/styles/LoginView.module.scss":[function(require,module,exports) {
+module.exports = {
+  "loginDiv": "_loginDiv_46977",
+  "loginDivWrapper": "_loginDivWrapper_46977",
+  "loginForm": "_loginForm_46977"
+};
+},{}],"assets/styles/components/AppLayout.module.scss":[function(require,module,exports) {
+module.exports = {
+  "AppLayout": "_AppLayout_c54d8",
+  "navbar": "_navbar_c54d8",
+  "childContent": "_childContent_c54d8",
+  "childContentWrapper": "_childContentWrapper_c54d8"
+};
+},{}],"layouts/AppLayout.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Navbar = _interopRequireDefault(require("../components/Navbar"));
+
+var _AppLayoutModule = _interopRequireDefault(require("../assets/styles/components/AppLayout.module.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AppLayout = function AppLayout(props) {
+  return _react.default.createElement("div", {
+    className: _AppLayoutModule.default.AppLayout
+  }, _react.default.createElement("div", {
+    className: _AppLayoutModule.default.navbar
+  }, _react.default.createElement(_Navbar.default, null)), _react.default.createElement("div", {
+    className: _AppLayoutModule.default.childContentWrapper
+  }, _react.default.createElement("div", {
+    className: _AppLayoutModule.default.childContent
+  }, props.children)));
+};
+
+var _default = AppLayout;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../components/Navbar":"components/Navbar.js","../assets/styles/components/AppLayout.module.scss":"assets/styles/components/AppLayout.module.scss"}],"views/LoginView.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _LoginViewModule = _interopRequireDefault(require("../assets/styles/LoginView.module.scss"));
+
+var _AppLayout = _interopRequireDefault(require("../layouts/AppLayout"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var LoginForm = function LoginForm() {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_AppLayout.default, null, _react.default.createElement("div", {
+    className: _LoginViewModule.default.loginDivWrapper
+  }, _react.default.createElement("div", {
+    className: _LoginViewModule.default.loginDiv
+  }, _react.default.createElement("h1", null, "Login to continue"), _react.default.createElement(_semanticUiReact.Form, {
+    className: _LoginViewModule.default.loginForm
+  }, _react.default.createElement(_semanticUiReact.Form.Input, {
+    fluid: true,
+    label: "Email",
+    placeholder: "Enter your email"
+  }), _react.default.createElement(_semanticUiReact.Form.Input, {
+    fluid: true,
+    label: "Password",
+    placeholder: "Enter password"
+  }), _react.default.createElement(_semanticUiReact.Button, {
+    positive: true,
+    content: "Sign up"
+  })), _react.default.createElement("a", null, "Forgot password?")))));
+};
+
+var _default = LoginForm;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/styles/LoginView.module.scss":"assets/styles/LoginView.module.scss","../layouts/AppLayout":"layouts/AppLayout.jsx"}],"assets/styles/SignUpView.module.scss":[function(require,module,exports) {
+module.exports = {
+  "signUpDiv": "_signUpDiv_80ad4",
+  "signUpDivWrapper": "_signUpDivWrapper_80ad4",
+  "signUpForm": "_signUpForm_80ad4"
+};
+},{}],"views/SignUpView.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _SignUpViewModule = _interopRequireDefault(require("../assets/styles/SignUpView.module.scss"));
+
+var _AppLayout = _interopRequireDefault(require("../layouts/AppLayout"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var options = [{
+  key: "mentor",
+  text: "Mentor",
+  value: "mentor"
+}, {
+  key: "mentee",
+  text: "Mentee",
+  value: "mentee"
+}];
+
+var SignUpForm = function SignUpForm() {
+  return _react.default.createElement(_AppLayout.default, null, _react.default.createElement("div", {
+    className: _SignUpViewModule.default.signUpDivWrapper
+  }, _react.default.createElement("div", {
+    className: _SignUpViewModule.default.signUpDiv
+  }, _react.default.createElement("h1", null, "Welcome to MentorFix"), _react.default.createElement(_semanticUiReact.Form, {
+    className: _SignUpViewModule.default.signUpForm
+  }, _react.default.createElement(_semanticUiReact.Form.Input, {
+    fluid: true,
+    label: "Email",
+    placeholder: "Enter your email"
+  }), _react.default.createElement(_semanticUiReact.Form.Input, {
+    fluid: true,
+    label: "Password",
+    placeholder: "Enter password"
+  }), _react.default.createElement(_semanticUiReact.Form.Select, {
+    options: options,
+    fluid: true,
+    label: "Signup as",
+    placeholder: "Select a type"
+  }), _react.default.createElement(_semanticUiReact.Button, {
+    positive: true,
+    content: "Sign up"
+  })))));
+};
+
+var _default = SignUpForm;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/styles/SignUpView.module.scss":"assets/styles/SignUpView.module.scss","../layouts/AppLayout":"layouts/AppLayout.jsx"}],"Routes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77397,16 +77478,24 @@ var _LandingView = _interopRequireDefault(require("./views/LandingView"));
 
 var _router = require("@reach/router");
 
+var _LoginView = _interopRequireDefault(require("./views/LoginView"));
+
+var _SignUpView = _interopRequireDefault(require("./views/SignUpView"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = function _default() {
   return _react.default.createElement(_router.Router, null, _react.default.createElement(_LandingView.default, {
     path: "/"
+  }), _react.default.createElement(_LoginView.default, {
+    path: "/login"
+  }), _react.default.createElement(_SignUpView.default, {
+    path: "/sign-up"
   }));
 };
 
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./views/LandingView":"views/LandingView.jsx","@reach/router":"node_modules/@reach/router/es/index.js"}],"app.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./views/LandingView":"views/LandingView.jsx","@reach/router":"node_modules/@reach/router/es/index.js","./views/LoginView":"views/LoginView.jsx","./views/SignUpView":"views/SignUpView.jsx"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77416,17 +77505,18 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-require("./assets/styles/index.scss");
+var _Routes = _interopRequireDefault(require("./Routes"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import './assets/styles/index.scss'
 var App = function App() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_AppLayout.default, null));
+  return _react.default.createElement(_Routes.default, null);
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./layouts/AppLayout":"layouts/AppLayout.jsx","./assets/styles/index.scss":"assets/styles/index.scss"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Routes":"Routes.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -77438,209 +77528,5 @@ var _app = _interopRequireDefault(require("./app"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render(_react.default.createElement(_app.default, null), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"app.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63539" + '/');
-
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
-          if (didAccept) {
-            handled = true;
-          }
-        }
-      }); // Enable HMR for CSS by default.
-
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
-      }
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID; // html encode message and stack trace
-
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-
-  if (checkedAssets[id]) {
-    return;
-  }
-
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-
-    return true;
-  }
-}
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"app.js"}]},{},["index.js"], null)
 //# sourceMappingURL=/src-view.e31bb0bc.js.map
