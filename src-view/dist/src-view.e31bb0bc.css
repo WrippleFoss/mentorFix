@@ -13,54 +13,65 @@
   --apple-green: #48b049;
   --moss-green: #a4d6a5;
   --light-lime-green: #f1faf1;
-  --font: 'Rubik', "Open Sans";
+  --font: "Rubik", "Open Sans";
   --max-width: 65rem;
   --border-radius: 5px;
   --card-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.08),
-        0 1px 2px 0 hsla(0, 0%, 0%, 0.04);
+      0 1px 2px 0 hsla(0, 0%, 0%, 0.04);
   --icon-close: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg>');
   --icon-hamburger: url('data:image/svg+xml,<svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>');
-  --icon-deals-info: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></svg>'); }
+  --icon-deals-info: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></svg>');
+}
 
 ._landingContainer_355d4 {
   background-image: linear-gradient(to right, var(--violet), var(--green));
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
-  ._landingContainer_355d4 ._landingNavbar_355d4 {
-    padding: 1rem; }
-  ._landingContainer_355d4 ._heroDiv_355d4 {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse; }
-  ._landingContainer_355d4 ._heroText_355d4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5rem;
-    line-height: 2rem; }
-    ._landingContainer_355d4 ._heroText_355d4 > h3 {
-      font-size: 2rem; }
-    ._landingContainer_355d4 ._heroText_355d4 ._landingButton_355d4 {
-      margin-top: 1rem; }
-    ._landingContainer_355d4 ._heroText_355d4 ._greenButton_355d4 {
-      width: 100%; }
+  justify-content: space-between;
+}
+._landingContainer_355d4 ._landingNavbar_355d4 {
+  padding: 1rem;
+}
+._landingContainer_355d4 ._heroDiv_355d4 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+}
+._landingContainer_355d4 ._heroText_355d4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+._landingContainer_355d4 ._heroText_355d4 > h3 {
+  font-size: 2rem;
+}
+._landingContainer_355d4 ._heroText_355d4 ._landingButton_355d4 {
+  margin-top: 1rem;
+}
+._landingContainer_355d4 ._heroText_355d4 ._greenButton_355d4 {
+  width: 100%;
+}
+._landingContainer_355d4 ._heroImage_355d4 {
+  display: none;
+}
+@media (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
   ._landingContainer_355d4 ._heroImage_355d4 {
-    display: none; }
-    @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-      ._landingContainer_355d4 ._heroImage_355d4 {
-        display: inline; } }
-
+    display: inline;
+  }
+}
 ._navbar_bbd38 {
-  display: flex; }
-  ._navbar_bbd38 ._navRight_bbd38 {
-    font-weight: 600;
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-    margin-top: 0.5rem; }
-
+  display: flex;
+}
+._navbar_bbd38 ._navRight_bbd38 {
+  font-weight: 600;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
 ._loginDiv_46977 {
   display: flex;
   justify-content: center;
@@ -70,54 +81,68 @@
   flex-shrink: 1;
   padding: 5rem 0rem;
   width: 80%;
-  max-width: 36rem; }
-  ._loginDiv_46977 > a {
-    cursor: pointer;
-    align-self: center;
-    margin-top: 1rem; }
-  ._loginDiv_46977 > h1 {
-    align-self: center;
-    font-weight: 400; }
-  @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-    ._loginDiv_46977 {
-      box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
-      padding: 5rem 3rem;
-      width: 50%; } }
-  ._loginDivWrapper_46977 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center; }
-  ._loginDiv_46977 ._loginForm_46977 {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0 0 0; }
-    ._loginDiv_46977 ._loginForm_46977 > button {
-      width: 100%;
-      margin: 2rem 0 0 0; }
-
+  max-width: 36rem;
+}
+._loginDiv_46977 > a {
+  cursor: pointer;
+  align-self: center;
+  margin-top: 1rem;
+}
+._loginDiv_46977 > h1 {
+  align-self: center;
+  font-weight: 400;
+}
+@media (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
+  ._loginDiv_46977 {
+    box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
+    padding: 5rem 3rem;
+    width: 50%;
+  }
+}
+._loginDivWrapper_46977 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+._loginDiv_46977 ._loginForm_46977 {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0 0;
+}
+._loginDiv_46977 ._loginForm_46977 > button {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
 ._AppLayout_c54d8 {
   display: flex;
-  flex-direction: column; }
-  ._AppLayout_c54d8 ._navbar_c54d8 {
-    padding: 1rem;
-    box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.6); }
+  flex-direction: column;
+}
+._AppLayout_c54d8 ._navbar_c54d8 {
+  padding: 1rem;
+  box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.6);
+}
+._AppLayout_c54d8 ._childContent_c54d8 {
+  position: relative;
+  flex: 1;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+@media (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
   ._AppLayout_c54d8 ._childContent_c54d8 {
-    position: relative;
-    flex: 1;
-    padding: 0 1rem;
-    margin-bottom: 2rem; }
-    @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-      ._AppLayout_c54d8 ._childContent_c54d8 {
-        padding: 0 1.625rem; } }
-    ._AppLayout_c54d8 ._childContentWrapper_c54d8 {
-      display: flex;
-      flex-flow: column;
-      min-height: 90vh; }
-      @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-        ._AppLayout_c54d8 ._childContentWrapper_c54d8 {
-          flex-flow: row; } }
-
+    padding: 0 1.625rem;
+  }
+}
+._AppLayout_c54d8 ._childContentWrapper_c54d8 {
+  display: flex;
+  flex-flow: column;
+  min-height: 90vh;
+}
+@media (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
+  ._AppLayout_c54d8 ._childContentWrapper_c54d8 {
+    flex-flow: row;
+  }
+}
 ._signUpDiv_80ad4 {
   display: flex;
   justify-content: center;
@@ -127,27 +152,33 @@
   flex-shrink: 1;
   padding: 5rem 0rem;
   width: 80%;
-  max-width: 36rem; }
-  ._signUpDiv_80ad4 > h1 {
-    align-self: center;
-    font-weight: 400; }
-  @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-    ._signUpDiv_80ad4 {
-      box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
-      padding: 5rem 3rem;
-      width: 50%; } }
-  ._signUpDivWrapper_80ad4 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center; }
-  ._signUpDiv_80ad4 ._signUpForm_80ad4 {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0 0 0; }
-    ._signUpDiv_80ad4 ._signUpForm_80ad4 > button {
-      width: 100%;
-      margin: 2rem 0 0 0; }
-
+  max-width: 36rem;
+}
+._signUpDiv_80ad4 > h1 {
+  align-self: center;
+  font-weight: 400;
+}
+@media (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
+  ._signUpDiv_80ad4 {
+    box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
+    padding: 5rem 3rem;
+    width: 50%;
+  }
+}
+._signUpDivWrapper_80ad4 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+._signUpDiv_80ad4 ._signUpForm_80ad4 {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0 0;
+}
+._signUpDiv_80ad4 ._signUpForm_80ad4 > button {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
 
 /*# sourceMappingURL=/src-view.e31bb0bc.css.map */

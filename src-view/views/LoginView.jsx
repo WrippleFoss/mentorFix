@@ -12,7 +12,7 @@ const LoginForm = () => {
             <Form className={styles.loginForm}>
               <Form.Input fluid label="Email" placeholder="Enter your email" />
               <Form.Input fluid label="Password" placeholder="Enter password" />
-              <Button positive content="Sign up" />
+              <Button positive content="Login" />
             </Form>
             <a>Forgot password?</a>
           </div>

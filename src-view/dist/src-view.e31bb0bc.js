@@ -77396,7 +77396,7 @@ var LoginForm = function LoginForm() {
     placeholder: "Enter password"
   }), _react.default.createElement(_semanticUiReact.Button, {
     positive: true,
-    content: "Sign up"
+    content: "Login"
   })), _react.default.createElement("a", null, "Forgot password?")))));
 };
 
