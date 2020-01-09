@@ -23,7 +23,7 @@
   "devDependencies": {
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "husky": "^3.0.4",
+    "husky": "^4.0.3",
     "parcel-bundler": "^1.12.3",
     "react-test-renderer": "^16.8.6"
   },
