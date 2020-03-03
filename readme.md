@@ -18,7 +18,7 @@ Your machine should have NPM(or yarn) and NodeJS  installed to use mentorFix loc
 ### Installation
 
 ```js
-git clone hhttps://github.com/WrippleFoss/mentorFix.git
+git clone https://github.com/WrippleFoss/mentorFix.git
 ```
 
 
