@@ -31983,28 +31983,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = _typeof;
 
-function _typeof2(obj) {
+function _typeof(obj) {
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof2 = function _typeof2(obj) {
+    exports.default = _typeof = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof2 = function _typeof2(obj) {
+    exports.default = _typeof = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof2(obj);
-}
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    exports.default = _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    exports.default = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
     };
   }
 
@@ -33541,16 +33527,14 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 module.exports = _createClass;
 },{}],"node_modules/@babel/runtime/helpers/typeof.js":[function(require,module,exports) {
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
 function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     module.exports = _typeof = function _typeof(obj) {
-      return _typeof2(obj);
+      return typeof obj;
     };
   } else {
     module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
@@ -35529,7 +35513,7 @@ var defineProperty = require("./defineProperty");
 function _objectSpread(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i] != null ? arguments[i] : {};
-    var ownKeys = Object.keys(source);
+    var ownKeys = Object.keys(Object(source));
 
     if (typeof Object.getOwnPropertySymbols === 'function') {
       ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
@@ -38165,7 +38149,7 @@ module.exports = require('./forEach');
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.getAutoControlledStateValue = void 0;
+exports.default = exports.getAutoControlledStateValue = exports.getDefaultPropName = void 0;
 
 var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
 
@@ -38223,6 +38207,8 @@ var getDefaultPropName = function getDefaultPropName(prop) {
  *  @param {boolean} [includeDefaults=false] Whether or not to heed the default props or initial state
  */
 
+
+exports.getDefaultPropName = getDefaultPropName;
 
 var getAutoControlledStateValue = function getAutoControlledStateValue(propName, props, state) {
   var includeDefaults = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false; // regular props
@@ -38379,7 +38365,190 @@ function (_Component) {
 }(_react.Component);
 
 exports.default = AutoControlledComponent;
-},{"@babel/runtime/helpers/objectSpread":"node_modules/@babel/runtime/helpers/objectSpread.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/assertThisInitialized":"node_modules/@babel/runtime/helpers/assertThisInitialized.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","lodash/isUndefined":"node_modules/lodash/isUndefined.js","lodash/startsWith":"node_modules/lodash/startsWith.js","lodash/filter":"node_modules/lodash/filter.js","lodash/isEmpty":"node_modules/lodash/isEmpty.js","lodash/keys":"node_modules/lodash/keys.js","lodash/intersection":"node_modules/lodash/intersection.js","lodash/has":"node_modules/lodash/has.js","lodash/each":"node_modules/lodash/each.js","lodash/invoke":"node_modules/lodash/invoke.js","react":"node_modules/react/index.js"}],"node_modules/@babel/runtime/helpers/arrayWithHoles.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/objectSpread":"node_modules/@babel/runtime/helpers/objectSpread.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/assertThisInitialized":"node_modules/@babel/runtime/helpers/assertThisInitialized.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","lodash/isUndefined":"node_modules/lodash/isUndefined.js","lodash/startsWith":"node_modules/lodash/startsWith.js","lodash/filter":"node_modules/lodash/filter.js","lodash/isEmpty":"node_modules/lodash/isEmpty.js","lodash/keys":"node_modules/lodash/keys.js","lodash/intersection":"node_modules/lodash/intersection.js","lodash/has":"node_modules/lodash/has.js","lodash/each":"node_modules/lodash/each.js","lodash/invoke":"node_modules/lodash/invoke.js","react":"node_modules/react/index.js"}],"node_modules/semantic-ui-react/dist/es/lib/ModernAutoControlledComponent.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));
+
+var _getPrototypeOf3 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));
+
+var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));
+
+var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));
+
+var _isUndefined2 = _interopRequireDefault(require("lodash/isUndefined"));
+
+var _startsWith2 = _interopRequireDefault(require("lodash/startsWith"));
+
+var _filter2 = _interopRequireDefault(require("lodash/filter"));
+
+var _isEmpty2 = _interopRequireDefault(require("lodash/isEmpty"));
+
+var _keys2 = _interopRequireDefault(require("lodash/keys"));
+
+var _intersection2 = _interopRequireDefault(require("lodash/intersection"));
+
+var _has2 = _interopRequireDefault(require("lodash/has"));
+
+var _each2 = _interopRequireDefault(require("lodash/each"));
+
+var _invoke2 = _interopRequireDefault(require("lodash/invoke"));
+
+var _react = require("react");
+
+var _AutoControlledComponent = require("./AutoControlledComponent");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ModernAutoControlledComponent =
+/*#__PURE__*/
+function (_Component) {
+  (0, _inherits2.default)(ModernAutoControlledComponent, _Component);
+
+  function ModernAutoControlledComponent() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    (0, _classCallCheck2.default)(this, ModernAutoControlledComponent);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(ModernAutoControlledComponent)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    var _this$constructor = _this.constructor,
+        autoControlledProps = _this$constructor.autoControlledProps,
+        getAutoControlledStateFromProps = _this$constructor.getAutoControlledStateFromProps;
+    var state = (0, _invoke2.default)((0, _assertThisInitialized2.default)(_this), 'getInitialAutoControlledState', _this.props) || {};
+
+    if ("development" !== 'production') {
+      var _this$constructor2 = _this.constructor,
+          defaultProps = _this$constructor2.defaultProps,
+          name = _this$constructor2.name,
+          propTypes = _this$constructor2.propTypes,
+          getDerivedStateFromProps = _this$constructor2.getDerivedStateFromProps; // require usage of getAutoControlledStateFromProps()
+
+      if (getDerivedStateFromProps !== ModernAutoControlledComponent.getDerivedStateFromProps) {
+        /* eslint-disable-next-line no-console */
+        console.error("Auto controlled ".concat(name, " must specify a static getAutoControlledStateFromProps() instead of getDerivedStateFromProps()."));
+      } // require propTypes
+
+
+      (0, _each2.default)(autoControlledProps, function (prop) {
+        var defaultProp = (0, _AutoControlledComponent.getDefaultPropName)(prop); // regular prop
+
+        if (!(0, _has2.default)(propTypes, defaultProp)) {
+          console.error("".concat(name, " is missing \"").concat(defaultProp, "\" propTypes validation for auto controlled prop \"").concat(prop, "\"."));
+        } // its default prop
+
+
+        if (!(0, _has2.default)(propTypes, prop)) {
+          console.error("".concat(name, " is missing propTypes validation for auto controlled prop \"").concat(prop, "\"."));
+        }
+      }); // prevent autoControlledProps in defaultProps
+      //
+      // When setting state, auto controlled props values always win (so the parent can manage them).
+      // It is not reasonable to decipher the difference between props from the parent and defaultProps.
+      // Allowing defaultProps results in trySetState always deferring to the defaultProp value.
+      // Auto controlled props also listed in defaultProps can never be updated.
+      //
+      // To set defaults for an AutoControlled prop, you can set the initial state in the
+      // constructor or by using an ES7 property initializer:
+      // https://babeljs.io/blog/2015/06/07/react-on-es6-plus#property-initializers
+
+      var illegalDefaults = (0, _intersection2.default)(autoControlledProps, (0, _keys2.default)(defaultProps));
+
+      if (!(0, _isEmpty2.default)(illegalDefaults)) {
+        console.error(['Do not set defaultProps for autoControlledProps. You can set defaults by', 'setting state in the constructor or using an ES7 property initializer', '(https://babeljs.io/blog/2015/06/07/react-on-es6-plus#property-initializers)', "See ".concat(name, " props: \"").concat(illegalDefaults, "\".")].join(' '));
+      } // prevent listing defaultProps in autoControlledProps
+      //
+      // Default props are automatically handled.
+      // Listing defaults in autoControlledProps would result in allowing defaultDefaultValue props.
+
+
+      var illegalAutoControlled = (0, _filter2.default)(autoControlledProps, function (prop) {
+        return (0, _startsWith2.default)(prop, 'default');
+      });
+
+      if (!(0, _isEmpty2.default)(illegalAutoControlled)) {
+        console.error(['Do not add default props to autoControlledProps.', 'Default props are automatically handled.', "See ".concat(name, " autoControlledProps: \"").concat(illegalAutoControlled, "\".")].join(' '));
+      }
+    } // Auto controlled props are copied to state.
+    // Set initial state by copying auto controlled props to state.
+    // Also look for the default prop for any auto controlled props (foo => defaultFoo)
+    // so we can set initial values from defaults.
+
+
+    var initialAutoControlledState = autoControlledProps.reduce(function (acc, prop) {
+      acc[prop] = (0, _AutoControlledComponent.getAutoControlledStateValue)(prop, _this.props, state, true);
+
+      if ("development" !== 'production') {
+        var defaultPropName = (0, _AutoControlledComponent.getDefaultPropName)(prop);
+        var _name = _this.constructor.name; // prevent defaultFoo={} along side foo={}
+
+        if (!(0, _isUndefined2.default)(_this.props[defaultPropName]) && !(0, _isUndefined2.default)(_this.props[prop])) {
+          console.error("".concat(_name, " prop \"").concat(prop, "\" is auto controlled. Specify either ").concat(defaultPropName, " or ").concat(prop, ", but not both."));
+        }
+      }
+
+      return acc;
+    }, {});
+    _this.state = (0, _objectSpread2.default)({}, state, initialAutoControlledState, {
+      autoControlledProps: autoControlledProps,
+      getAutoControlledStateFromProps: getAutoControlledStateFromProps
+    });
+    return _this;
+  }
+
+  (0, _createClass2.default)(ModernAutoControlledComponent, null, [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(props, state) {
+      var autoControlledProps = state.autoControlledProps,
+          getAutoControlledStateFromProps = state.getAutoControlledStateFromProps; // Solve the next state for autoControlledProps
+
+      var newStateFromProps = autoControlledProps.reduce(function (acc, prop) {
+        var isNextDefined = !(0, _isUndefined2.default)(props[prop]); // if next is defined then use its value
+
+        if (isNextDefined) acc[prop] = props[prop];
+        return acc;
+      }, {}); // Due to the inheritance of the AutoControlledComponent we should call its
+      // getAutoControlledStateFromProps() and merge it with the existing state
+
+      if (getAutoControlledStateFromProps) {
+        var computedState = getAutoControlledStateFromProps(props, (0, _objectSpread2.default)({}, state, newStateFromProps)); // We should follow the idea of getDerivedStateFromProps() and return only modified state
+
+        return (0, _objectSpread2.default)({}, newStateFromProps, computedState);
+      }
+
+      return newStateFromProps;
+    }
+    /**
+     * Override this method to use getDerivedStateFromProps() in child components.
+     */
+
+  }, {
+    key: "getAutoControlledStateFromProps",
+    value: function getAutoControlledStateFromProps() {
+      return null;
+    }
+  }]);
+  return ModernAutoControlledComponent;
+}(_react.Component);
+
+exports.default = ModernAutoControlledComponent;
+},{"@babel/runtime/helpers/objectSpread":"node_modules/@babel/runtime/helpers/objectSpread.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/assertThisInitialized":"node_modules/@babel/runtime/helpers/assertThisInitialized.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","lodash/isUndefined":"node_modules/lodash/isUndefined.js","lodash/startsWith":"node_modules/lodash/startsWith.js","lodash/filter":"node_modules/lodash/filter.js","lodash/isEmpty":"node_modules/lodash/isEmpty.js","lodash/keys":"node_modules/lodash/keys.js","lodash/intersection":"node_modules/lodash/intersection.js","lodash/has":"node_modules/lodash/has.js","lodash/each":"node_modules/lodash/each.js","lodash/invoke":"node_modules/lodash/invoke.js","react":"node_modules/react/index.js","./AutoControlledComponent":"node_modules/semantic-ui-react/dist/es/lib/AutoControlledComponent.js"}],"node_modules/@babel/runtime/helpers/arrayWithHoles.js":[function(require,module,exports) {
 function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
 }
@@ -46664,6 +46833,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var _exportNames = {
   AutoControlledComponent: true,
+  ModernAutoControlledComponent: true,
   getChildMapping: true,
   mergeChildMappings: true,
   childrenUtils: true,
@@ -46698,6 +46868,12 @@ Object.defineProperty(exports, "AutoControlledComponent", {
   enumerable: true,
   get: function () {
     return _AutoControlledComponent2.default;
+  }
+});
+Object.defineProperty(exports, "ModernAutoControlledComponent", {
+  enumerable: true,
+  get: function () {
+    return _ModernAutoControlledComponent2.default;
   }
 });
 Object.defineProperty(exports, "getChildMapping", {
@@ -46860,6 +47036,8 @@ exports.SUI = exports.customPropTypes = exports.childrenUtils = void 0;
 
 var _AutoControlledComponent2 = _interopRequireDefault(require("./AutoControlledComponent"));
 
+var _ModernAutoControlledComponent2 = _interopRequireDefault(require("./ModernAutoControlledComponent"));
+
 var _childMapping = require("./childMapping");
 
 var _childrenUtils = _interopRequireWildcard(require("./childrenUtils"));
@@ -46918,7 +47096,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./AutoControlledComponent":"node_modules/semantic-ui-react/dist/es/lib/AutoControlledComponent.js","./childMapping":"node_modules/semantic-ui-react/dist/es/lib/childMapping.js","./childrenUtils":"node_modules/semantic-ui-react/dist/es/lib/childrenUtils.js","./classNameBuilders":"node_modules/semantic-ui-react/dist/es/lib/classNameBuilders.js","./customPropTypes":"node_modules/semantic-ui-react/dist/es/lib/customPropTypes.js","./eventStack":"node_modules/semantic-ui-react/dist/es/lib/eventStack/index.js","./factories":"node_modules/semantic-ui-react/dist/es/lib/factories.js","./getUnhandledProps":"node_modules/semantic-ui-react/dist/es/lib/getUnhandledProps.js","./getElementType":"node_modules/semantic-ui-react/dist/es/lib/getElementType.js","./htmlPropsUtils":"node_modules/semantic-ui-react/dist/es/lib/htmlPropsUtils.js","./isBrowser":"node_modules/semantic-ui-react/dist/es/lib/isBrowser.js","./doesNodeContainClick":"node_modules/semantic-ui-react/dist/es/lib/doesNodeContainClick.js","./leven":"node_modules/semantic-ui-react/dist/es/lib/leven.js","./createPaginationItems":"node_modules/semantic-ui-react/dist/es/lib/createPaginationItems/index.js","./SUI":"node_modules/semantic-ui-react/dist/es/lib/SUI.js","./numberToWord":"node_modules/semantic-ui-react/dist/es/lib/numberToWord.js","./normalizeOffset":"node_modules/semantic-ui-react/dist/es/lib/normalizeOffset.js","./normalizeTransitionDuration":"node_modules/semantic-ui-react/dist/es/lib/normalizeTransitionDuration.js","./objectDiff":"node_modules/semantic-ui-react/dist/es/lib/objectDiff.js"}],"node_modules/lodash/without.js":[function(require,module,exports) {
+},{"./AutoControlledComponent":"node_modules/semantic-ui-react/dist/es/lib/AutoControlledComponent.js","./ModernAutoControlledComponent":"node_modules/semantic-ui-react/dist/es/lib/ModernAutoControlledComponent.js","./childMapping":"node_modules/semantic-ui-react/dist/es/lib/childMapping.js","./childrenUtils":"node_modules/semantic-ui-react/dist/es/lib/childrenUtils.js","./classNameBuilders":"node_modules/semantic-ui-react/dist/es/lib/classNameBuilders.js","./customPropTypes":"node_modules/semantic-ui-react/dist/es/lib/customPropTypes.js","./eventStack":"node_modules/semantic-ui-react/dist/es/lib/eventStack/index.js","./factories":"node_modules/semantic-ui-react/dist/es/lib/factories.js","./getUnhandledProps":"node_modules/semantic-ui-react/dist/es/lib/getUnhandledProps.js","./getElementType":"node_modules/semantic-ui-react/dist/es/lib/getElementType.js","./htmlPropsUtils":"node_modules/semantic-ui-react/dist/es/lib/htmlPropsUtils.js","./isBrowser":"node_modules/semantic-ui-react/dist/es/lib/isBrowser.js","./doesNodeContainClick":"node_modules/semantic-ui-react/dist/es/lib/doesNodeContainClick.js","./leven":"node_modules/semantic-ui-react/dist/es/lib/leven.js","./createPaginationItems":"node_modules/semantic-ui-react/dist/es/lib/createPaginationItems/index.js","./SUI":"node_modules/semantic-ui-react/dist/es/lib/SUI.js","./numberToWord":"node_modules/semantic-ui-react/dist/es/lib/numberToWord.js","./normalizeOffset":"node_modules/semantic-ui-react/dist/es/lib/normalizeOffset.js","./normalizeTransitionDuration":"node_modules/semantic-ui-react/dist/es/lib/normalizeTransitionDuration.js","./objectDiff":"node_modules/semantic-ui-react/dist/es/lib/objectDiff.js"}],"node_modules/lodash/without.js":[function(require,module,exports) {
 var baseDifference = require('./_baseDifference'),
     baseRest = require('./_baseRest'),
     isArrayLikeObject = require('./isArrayLikeObject');
@@ -57827,7 +58005,8 @@ function FormField(props) {
       label = props.label,
       required = props.required,
       type = props.type,
-      width = props.width;
+      width = props.width,
+      id = props.id;
   var classes = (0, _classnames.default)((0, _lib.useKeyOnly)(disabled, 'disabled'), (0, _lib.useKeyOnly)(error, 'error'), (0, _lib.useKeyOnly)(inline, 'inline'), (0, _lib.useKeyOnly)(required, 'required'), (0, _lib.useWidthProp)(width, 'wide'), 'field', className);
   var rest = (0, _lib.getUnhandledProps)(FormField, props);
   var ElementType = (0, _lib.getElementType)(FormField, props);
@@ -57837,7 +58016,10 @@ function FormField(props) {
     autoGenerateKey: false,
     defaultProps: {
       prompt: true,
-      pointing: errorPointing
+      pointing: errorPointing,
+      id: id ? "".concat(id, "-error-message") : undefined,
+      role: 'alert',
+      'aria-atomic': true
     }
   });
 
@@ -57863,26 +58045,32 @@ function FormField(props) {
   // ----------------------------------------
 
 
+  var ariaDescribedBy = id && error ? "".concat(id, "-error-message") : null;
+  var ariaAttrs = {
+    'aria-describedby': ariaDescribedBy,
+    'aria-invalid': error !== undefined ? true : undefined
+  };
   var controlProps = (0, _objectSpread2.default)({}, rest, {
     content: content,
     children: children,
     disabled: disabled,
     required: required,
-    type: type // wrap HTML checkboxes/radios in the label
+    type: type,
+    id: id // wrap HTML checkboxes/radios in the label
 
   });
 
   if (control === 'input' && (type === 'checkbox' || type === 'radio')) {
     return _react.default.createElement(ElementType, {
       className: classes
-    }, _react.default.createElement("label", null, errorLabelBefore, (0, _react.createElement)(control, controlProps), " ", label, errorLabelAfter));
+    }, _react.default.createElement("label", null, errorLabelBefore, (0, _react.createElement)(control, (0, _objectSpread2.default)({}, ariaAttrs, controlProps)), " ", label, errorLabelAfter));
   } // pass label prop to controls that support it
 
 
   if (control === _Checkbox.default || control === _Radio.default) {
     return _react.default.createElement(ElementType, {
       className: classes
-    }, errorLabelBefore, (0, _react.createElement)(control, (0, _objectSpread2.default)({}, controlProps, {
+    }, errorLabelBefore, (0, _react.createElement)(control, (0, _objectSpread2.default)({}, ariaAttrs, controlProps, {
       label: label
     })), errorLabelAfter);
   } // ----------------------------------------
@@ -57894,13 +58082,13 @@ function FormField(props) {
     className: classes
   }, (0, _lib.createHTMLLabel)(label, {
     defaultProps: {
-      htmlFor: (0, _get2.default)(controlProps, 'id')
+      htmlFor: id
     },
     autoGenerateKey: false
-  }), errorLabelBefore, (0, _react.createElement)(control, controlProps), errorLabelAfter);
+  }), errorLabelBefore, (0, _react.createElement)(control, (0, _objectSpread2.default)({}, ariaAttrs, controlProps)), errorLabelAfter);
 }
 
-FormField.handledProps = ["as", "children", "className", "content", "control", "disabled", "error", "inline", "label", "required", "type", "width"];
+FormField.handledProps = ["as", "children", "className", "content", "control", "disabled", "error", "id", "inline", "label", "required", "type", "width"];
 FormField.propTypes = "development" !== "production" ? {
   /** An element type to render as (string or function). */
   as: _propTypes.default.elementType,
@@ -57926,6 +58114,9 @@ FormField.propTypes = "development" !== "production" ? {
 
   /** Individual fields may display an error state along with a message. */
   error: _propTypes.default.oneOfType([_propTypes.default.bool, _lib.customPropTypes.itemShorthand]),
+
+  /** The id of the control */
+  id: _propTypes.default.string,
 
   /** A field can have its label next to instead of above it. */
   inline: _propTypes.default.bool,
@@ -69058,7 +69249,41 @@ partialRight.placeholder = {};
 
 module.exports = partialRight;
 
-},{"./_baseRest":"node_modules/lodash/_baseRest.js","./_createWrap":"node_modules/lodash/_createWrap.js","./_getHolder":"node_modules/lodash/_getHolder.js","./_replaceHolders":"node_modules/lodash/_replaceHolders.js"}],"node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategory.js":[function(require,module,exports) {
+},{"./_baseRest":"node_modules/lodash/_baseRest.js","./_createWrap":"node_modules/lodash/_createWrap.js","./_getHolder":"node_modules/lodash/_getHolder.js","./_replaceHolders":"node_modules/lodash/_replaceHolders.js"}],"node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategoryLayout.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function SearchCategoryLayout(props) {
+  var categoryContent = props.categoryContent,
+      resultsContent = props.resultsContent;
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("div", {
+    className: "name"
+  }, categoryContent), _react.default.createElement("div", {
+    className: "results"
+  }, resultsContent));
+}
+
+SearchCategoryLayout.handledProps = ["categoryContent", "resultsContent"];
+SearchCategoryLayout.propTypes = "development" !== "production" ? {
+  /** The rendered category content */
+  categoryContent: _propTypes.default.element.isRequired,
+
+  /** The rendered results content */
+  resultsContent: _propTypes.default.element.isRequired
+} : {};
+var _default = SearchCategoryLayout;
+exports.default = _default;
+},{"prop-types":"node_modules/prop-types/index.js","react":"node_modules/react/index.js"}],"node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -69076,6 +69301,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _lib = require("../../lib");
 
+var _SearchCategoryLayout = _interopRequireDefault(require("./SearchCategoryLayout"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function SearchCategory(props) {
@@ -69083,21 +69310,24 @@ function SearchCategory(props) {
       children = props.children,
       className = props.className,
       content = props.content,
+      layoutRenderer = props.layoutRenderer,
       renderer = props.renderer;
   var classes = (0, _classnames.default)((0, _lib.useKeyOnly)(active, 'active'), 'category', className);
   var rest = (0, _lib.getUnhandledProps)(SearchCategory, props);
   var ElementType = (0, _lib.getElementType)(SearchCategory, props);
+  var categoryContent = renderer(props);
+  var resultsContent = _lib.childrenUtils.isNil(children) ? content : children;
   return _react.default.createElement(ElementType, (0, _extends2.default)({}, rest, {
     className: classes
-  }), _react.default.createElement("div", {
-    className: "name"
-  }, renderer(props)), _react.default.createElement("div", {
-    className: "results"
-  }, _lib.childrenUtils.isNil(children) ? content : children));
+  }), layoutRenderer({
+    categoryContent: categoryContent,
+    resultsContent: resultsContent
+  }));
 }
 
-SearchCategory.handledProps = ["active", "as", "children", "className", "content", "name", "renderer", "results"];
+SearchCategory.handledProps = ["active", "as", "children", "className", "content", "layoutRenderer", "name", "renderer", "results"];
 SearchCategory.defaultProps = {
+  layoutRenderer: _SearchCategoryLayout.default,
   renderer: function renderer(_ref) {
     var name = _ref.name;
     return name;
@@ -69123,6 +69353,14 @@ SearchCategory.propTypes = "development" !== "production" ? {
   name: _propTypes.default.string,
 
   /**
+   * Renders the category layout contents.
+   *
+   * @param {object} props - The SearchCategoryLayout props object.
+   * @returns {*} - Renderable category layout contents.
+   */
+  layoutRenderer: _propTypes.default.func,
+
+  /**
    * Renders the category contents.
    *
    * @param {object} props - The SearchCategory props object.
@@ -69135,7 +69373,7 @@ SearchCategory.propTypes = "development" !== "production" ? {
 } : {};
 var _default = SearchCategory;
 exports.default = _default;
-},{"@babel/runtime/helpers/extends":"node_modules/@babel/runtime/helpers/extends.js","classnames":"node_modules/classnames/index.js","prop-types":"node_modules/prop-types/index.js","react":"node_modules/react/index.js","../../lib":"node_modules/semantic-ui-react/dist/es/lib/index.js"}],"node_modules/semantic-ui-react/dist/es/modules/Search/SearchResult.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/extends":"node_modules/@babel/runtime/helpers/extends.js","classnames":"node_modules/classnames/index.js","prop-types":"node_modules/prop-types/index.js","react":"node_modules/react/index.js","../../lib":"node_modules/semantic-ui-react/dist/es/lib/index.js","./SearchCategoryLayout":"node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategoryLayout.js"}],"node_modules/semantic-ui-react/dist/es/modules/Search/SearchResult.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -69676,7 +69914,7 @@ function (_Component) {
       var selectedIndex = _this.state.selectedIndex;
       var offsetIndex = index + offset;
       return _react.default.createElement(_SearchResult.default, (0, _extends2.default)({
-        key: childKey || result.title,
+        key: childKey || result.id || result.title,
         active: selectedIndex === offsetIndex,
         onClick: _this.handleItemClick,
         onMouseDown: _this.handleItemMouseDown,
@@ -69692,6 +69930,7 @@ function (_Component) {
     });
     (0, _defineProperty2.default)((0, _assertThisInitialized2.default)(_this), "renderCategories", function () {
       var _this$props4 = _this.props,
+          categoryLayoutRenderer = _this$props4.categoryLayoutRenderer,
           categoryRenderer = _this$props4.categoryRenderer,
           categories = _this$props4.results;
       var selectedIndex = _this.state.selectedIndex;
@@ -69702,6 +69941,7 @@ function (_Component) {
         var categoryProps = (0, _objectSpread2.default)({
           key: childKey || category.name,
           active: (0, _inRange2.default)(selectedIndex, count, count + category.results.length),
+          layoutRenderer: categoryLayoutRenderer,
           renderer: categoryRenderer
         }, category);
         var renderFn = (0, _partialRight2.default)(_this.renderResult, count);
@@ -69855,7 +70095,7 @@ exports.default = Search;
 (0, _defineProperty2.default)(Search, "Category", _SearchCategory.default);
 (0, _defineProperty2.default)(Search, "Result", _SearchResult.default);
 (0, _defineProperty2.default)(Search, "Results", _SearchResults.default);
-(0, _defineProperty2.default)(Search, "handledProps", ["aligned", "as", "category", "categoryRenderer", "className", "defaultOpen", "defaultValue", "fluid", "icon", "input", "loading", "minCharacters", "noResultsDescription", "noResultsMessage", "onBlur", "onFocus", "onMouseDown", "onResultSelect", "onSearchChange", "onSelectionChange", "open", "resultRenderer", "results", "selectFirstResult", "showNoResults", "size", "value"]);
+(0, _defineProperty2.default)(Search, "handledProps", ["aligned", "as", "category", "categoryLayoutRenderer", "categoryRenderer", "className", "defaultOpen", "defaultValue", "fluid", "icon", "input", "loading", "minCharacters", "noResultsDescription", "noResultsMessage", "onBlur", "onFocus", "onMouseDown", "onResultSelect", "onSearchChange", "onSelectionChange", "open", "resultRenderer", "results", "selectFirstResult", "showNoResults", "size", "value"]);
 Search.propTypes = "development" !== "production" ? {
   /** An element type to render as (string or function). */
   as: _propTypes.default.elementType,
@@ -69902,6 +70142,15 @@ Search.propTypes = "development" !== "production" ? {
   // ------------------------------------
   // Rendering
   // ------------------------------------
+
+  /**
+   * Renders the SearchCategory layout.
+   *
+   * @param {object} categoryContent - The Renderable SearchCategory contents.
+   * @param {object} resultsContent - The Renderable SearchResult contents.
+   * @returns {*} - Renderable SearchCategory layout.
+   */
+  categoryLayoutRenderer: _propTypes.default.func,
 
   /**
    * Renders the SearchCategory contents.
@@ -72805,7 +73054,7 @@ function FeedSummary(props) {
     };
   }, user, {
     autoGenerateKey: false
-  }), content, (0, _lib.createShorthand)(_FeedDate.default, function (val) {
+  }), content && ' ', content, content && ' ', (0, _lib.createShorthand)(_FeedDate.default, function (val) {
     return {
       content: val
     };
@@ -77210,20 +77459,20 @@ var shouldNavigate = function shouldNavigate(event) {
 module.exports = "/hero-image.c4ef0636.png";
 },{}],"assets/styles/components/LandingView.module.scss":[function(require,module,exports) {
 module.exports = {
-  "landingContainer": "_landingContainer_355d4",
-  "landingNavbar": "_landingNavbar_355d4",
-  "heroDiv": "_heroDiv_355d4",
-  "heroText": "_heroText_355d4",
-  "landingButton": "_landingButton_355d4",
-  "greenButton": "_greenButton_355d4",
-  "heroImage": "_heroImage_355d4"
+  "landingContainer": "_landingContainer_4ce18",
+  "landingNavbar": "_landingNavbar_4ce18",
+  "heroDiv": "_heroDiv_4ce18",
+  "heroText": "_heroText_4ce18",
+  "landingButton": "_landingButton_4ce18",
+  "greenButton": "_greenButton_4ce18",
+  "heroImage": "_heroImage_4ce18"
 };
 },{}],"assets/logo/master-logo.png":[function(require,module,exports) {
 module.exports = "/master-logo.629abb14.png";
 },{}],"assets/styles/components/Navbar.module.scss":[function(require,module,exports) {
 module.exports = {
-  "navbar": "_navbar_bbd38",
-  "navRight": "_navRight_bbd38"
+  "navbar": "_navbar_7e8b6",
+  "navRight": "_navRight_7e8b6"
 };
 },{}],"components/Navbar.js":[function(require,module,exports) {
 "use strict";
@@ -77320,16 +77569,16 @@ var _default = LandingView;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/hero-image.png":"assets/hero-image.png","../assets/styles/components/LandingView.module.scss":"assets/styles/components/LandingView.module.scss","../components/Navbar":"components/Navbar.js"}],"assets/styles/LoginView.module.scss":[function(require,module,exports) {
 module.exports = {
-  "loginDiv": "_loginDiv_46977",
-  "loginDivWrapper": "_loginDivWrapper_46977",
-  "loginForm": "_loginForm_46977"
+  "loginDiv": "_loginDiv_8c853",
+  "loginDivWrapper": "_loginDivWrapper_8c853",
+  "loginForm": "_loginForm_8c853"
 };
 },{}],"assets/styles/components/AppLayout.module.scss":[function(require,module,exports) {
 module.exports = {
-  "AppLayout": "_AppLayout_c54d8",
-  "navbar": "_navbar_c54d8",
-  "childContent": "_childContent_c54d8",
-  "childContentWrapper": "_childContentWrapper_c54d8"
+  "AppLayout": "_AppLayout_bdfc1",
+  "navbar": "_navbar_bdfc1",
+  "childContent": "_childContent_bdfc1",
+  "childContentWrapper": "_childContentWrapper_bdfc1"
 };
 },{}],"layouts/AppLayout.jsx":[function(require,module,exports) {
 "use strict";
@@ -77396,7 +77645,7 @@ var LoginForm = function LoginForm() {
     placeholder: "Enter password"
   }), _react.default.createElement(_semanticUiReact.Button, {
     positive: true,
-    content: "Sign up"
+    content: "Log In"
   })), _react.default.createElement("a", null, "Forgot password?")))));
 };
 
@@ -77404,9 +77653,9 @@ var _default = LoginForm;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/styles/LoginView.module.scss":"assets/styles/LoginView.module.scss","../layouts/AppLayout":"layouts/AppLayout.jsx"}],"assets/styles/SignUpView.module.scss":[function(require,module,exports) {
 module.exports = {
-  "signUpDiv": "_signUpDiv_80ad4",
-  "signUpDivWrapper": "_signUpDivWrapper_80ad4",
-  "signUpForm": "_signUpForm_80ad4"
+  "signUpDiv": "_signUpDiv_b0e2c",
+  "signUpDivWrapper": "_signUpDivWrapper_b0e2c",
+  "signUpForm": "_signUpForm_b0e2c"
 };
 },{}],"views/SignUpView.jsx":[function(require,module,exports) {
 "use strict";
