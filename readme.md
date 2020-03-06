@@ -34,6 +34,7 @@ yarn
 
 ```js
 $ cd src-view
+$ yarn global add parcel-bundler
 $ yarn start
 goto http://localhost:1234
 ```
