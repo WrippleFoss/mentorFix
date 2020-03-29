@@ -26,7 +26,7 @@ This will start your node server at 4000 port
 1. Create your feature branch: `git checkout -b {user}/{feature}`
 1. Inform the channel which feature are you working on
 1. Commit your changes: `git commit -am 'Add some feature'`
-1. Once the work is done, pull any new changes from the “staging” branch and resolve any conflicts.
+1. Once the work is done, pull any new changes from the “staging” branch (the staging branch here is the ```develop``` branch) and resolve any conflicts.
 1. Push to the branch: `git push origin {user}/{feature}`
 1. Submit a pull request 🚀
 
