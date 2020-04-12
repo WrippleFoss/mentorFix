@@ -22,46 +22,46 @@
   --icon-hamburger: url('data:image/svg+xml,<svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>');
   --icon-deals-info: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></svg>'); }
 
-._landingContainer_4ce18 {
+._landingContainer_15221 {
   background-image: linear-gradient(to right, var(--violet), var(--green));
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  ._landingContainer_4ce18 ._landingNavbar_4ce18 {
+  ._landingContainer_15221 ._landingNavbar_15221 {
     padding: 1rem; }
-  ._landingContainer_4ce18 ._heroDiv_4ce18 {
+  ._landingContainer_15221 ._heroDiv_15221 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse; }
-  ._landingContainer_4ce18 ._heroText_4ce18 {
+  ._landingContainer_15221 ._heroText_15221 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
     line-height: 2rem; }
-    ._landingContainer_4ce18 ._heroText_4ce18 > h3 {
+    ._landingContainer_15221 ._heroText_15221 > h3 {
       font-size: 2rem; }
-    ._landingContainer_4ce18 ._heroText_4ce18 ._landingButton_4ce18 {
+    ._landingContainer_15221 ._heroText_15221 ._landingButton_15221 {
       margin-top: 1rem; }
-    ._landingContainer_4ce18 ._heroText_4ce18 ._greenButton_4ce18 {
+    ._landingContainer_15221 ._heroText_15221 ._greenButton_15221 {
       width: 100%; }
-  ._landingContainer_4ce18 ._heroImage_4ce18 {
+  ._landingContainer_15221 ._heroImage_15221 {
     display: none; }
     @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-      ._landingContainer_4ce18 ._heroImage_4ce18 {
+      ._landingContainer_15221 ._heroImage_15221 {
         display: inline; } }
 
-._navbar_7e8b6 {
+._navbar_b663c {
   display: flex; }
-  ._navbar_7e8b6 ._navRight_7e8b6 {
+  ._navbar_b663c ._navRight_b663c {
     font-weight: 600;
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
     margin-top: 0.5rem; }
 
-._loginDiv_8c853 {
+._loginDiv_7d638 {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -71,54 +71,54 @@
   padding: 5rem 0rem;
   width: 80%;
   max-width: 36rem; }
-  ._loginDiv_8c853 > a {
+  ._loginDiv_7d638 > a {
     cursor: pointer;
     align-self: center;
     margin-top: 1rem; }
-  ._loginDiv_8c853 > h1 {
+  ._loginDiv_7d638 > h1 {
     align-self: center;
     font-weight: 400; }
   @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-    ._loginDiv_8c853 {
+    ._loginDiv_7d638 {
       box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
       padding: 5rem 3rem;
       width: 50%; } }
-  ._loginDivWrapper_8c853 {
+  ._loginDivWrapper_7d638 {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center; }
-  ._loginDiv_8c853 ._loginForm_8c853 {
+  ._loginDiv_7d638 ._loginForm_7d638 {
     display: flex;
     flex-direction: column;
     margin: 2rem 0 0 0; }
-    ._loginDiv_8c853 ._loginForm_8c853 > button {
+    ._loginDiv_7d638 ._loginForm_7d638 > button {
       width: 100%;
       margin: 2rem 0 0 0; }
 
-._AppLayout_bdfc1 {
+._AppLayout_9d3cf {
   display: flex;
   flex-direction: column; }
-  ._AppLayout_bdfc1 ._navbar_bdfc1 {
+  ._AppLayout_9d3cf ._navbar_9d3cf {
     padding: 1rem;
     box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.6); }
-  ._AppLayout_bdfc1 ._childContent_bdfc1 {
+  ._AppLayout_9d3cf ._childContent_9d3cf {
     position: relative;
     flex: 1;
     padding: 0 1rem;
     margin-bottom: 2rem; }
     @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-      ._AppLayout_bdfc1 ._childContent_bdfc1 {
+      ._AppLayout_9d3cf ._childContent_9d3cf {
         padding: 0 1.625rem; } }
-    ._AppLayout_bdfc1 ._childContentWrapper_bdfc1 {
+    ._AppLayout_9d3cf ._childContentWrapper_9d3cf {
       display: flex;
       flex-flow: column;
       min-height: 90vh; }
       @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-        ._AppLayout_bdfc1 ._childContentWrapper_bdfc1 {
+        ._AppLayout_9d3cf ._childContentWrapper_9d3cf {
           flex-flow: row; } }
 
-._signUpDiv_b0e2c {
+._signUpDiv_be176 {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -128,24 +128,24 @@
   padding: 5rem 0rem;
   width: 80%;
   max-width: 36rem; }
-  ._signUpDiv_b0e2c > h1 {
+  ._signUpDiv_be176 > h1 {
     align-self: center;
     font-weight: 400; }
   @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
-    ._signUpDiv_b0e2c {
+    ._signUpDiv_be176 {
       box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
       padding: 5rem 3rem;
       width: 50%; } }
-  ._signUpDivWrapper_b0e2c {
+  ._signUpDivWrapper_be176 {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center; }
-  ._signUpDiv_b0e2c ._signUpForm_b0e2c {
+  ._signUpDiv_be176 ._signUpForm_be176 {
     display: flex;
     flex-direction: column;
     margin: 2rem 0 0 0; }
-    ._signUpDiv_b0e2c ._signUpForm_b0e2c > button {
+    ._signUpDiv_be176 ._signUpForm_be176 > button {
       width: 100%;
       margin: 2rem 0 0 0; }
 
