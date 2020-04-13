@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+$cardColor: rgb(255, 255, 255);
+
+.cardContainer {
+  font-family: "Arial";
+  height: 30rem;
+  width: 20rem;
+  position: relative;
+  background-color: $cardColor;
+  overflow: hidden;
+  box-shadow: 0 10px 10px gray;
+  border-radius: 5px;
+  margin: 3rem;
+  display: grid;
+  grid-template-rows: 45% 10% 5% 10% 30%;
+  grid-template-areas: "img-section" "name-section" "title-section" "desc-section" "action-section"; //"social-section";
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 0 20px gray;
+  }
+
+  // .imgCardSection {
+  //   grid-area: img-section;
+  //   overflow: hidden;
+  //   position: relative;
+
+  //   .imgCardSquare {
+  //     background-color: $cardColor;
+  //     height: 25rem;
+  //     width: 10rem;
+  //     position: absolute;
+  //     transform: rotate(70deg);
+  //     top: 6rem;
+  //     left: 5rem;
+  //   }
+
+  //   .imgCardStyle {
+  //     height: 100%;
+  //     width: 20rem;
+  //   }
+  // }
+
+  .nameCardSection {
+    grid-area: name-section;
+    font-size: 1.8rem;
+  }
+
+  .titleCardSection {
+    grid-area: title-section;
+    font-size: 1.2rem;
+    color: darkgray;
+  }
+
+  .descCardSection {
+    grid-area: desc-section;
+    margin: 0.5rem 1.5rem;
+  }
+
+  .socialCardSection {
+    grid-area: social-section;
+    margin: auto;
+
+    .socialCardStyle {
+      display: inline-flex;
+      height: 2rem;
+      margin: 0 1rem;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .profileImgCard {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    top: calc(50% - 13rem);
+    left: calc(50% - 5rem);
+  }
+  .cardAction {
+    grid-area: action-section;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    > button {
+      cursor: pointer;
+      outline: none;
+      &.outline1 {
+        position: relative;
+        margin: auto;
+        z-index: 3;
+        background: #a17da8;
+        color: #ffffff;
+        font-size: 14px;
+        border-color: #a17da8;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 22px;
+        padding: 10px 40px;
+        text-align: center;
+        transition: all 0.2s linear;
+        a {
+          text-decoration: none;
+        }
+      }
+      &.outline1:hover {
+        color: white;
+        background: #a17da8;
+        border-color: white;
+        transition: all 0.2s linear;
+      }
+      &.outline1:active {
+        border-radius: 22px;
+      }
+      &.outline2 {
+        position: relative;
+        margin: auto;
+        z-index: 3;
+        background: transparent;
+        color: #11c4a6be;
+        font-size: 14px;
+        border-color: #11c4a6be;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 22px;
+        padding: 10px 40px;
+        margin-left: 12px;
+        text-align: center;
+        transition: all 0.2s linear;
+        a {
+          text-decoration: none;
+        }
+      }
+      &.outline2:hover {
+        font-weight: 700;
+        color: white;
+        border-color: white;
+        background: #11c4a6be;
+      }
+    }
+  }
+}
