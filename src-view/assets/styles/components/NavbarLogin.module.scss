@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    margin: 30px;
+  
+    .navRight {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        flex-grow: 1;
+        font-size: 20.25px;
+      .about {
+        float: right;
+        color: #555555;
+        padding: 10px;
+      }
+      .signup {
+        float: right;
+        color: #C25FFF;
+        padding: 10px;
+      }
+    }
+  }
+  

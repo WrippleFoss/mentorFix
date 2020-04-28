@@ -1,49 +1,87 @@
 @import './mixins';
 
-.loginDiv {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    align-self: center;
-    flex-shrink: 1;
-    padding: 5rem 0rem;
-    width: 80%;
-    max-width: 36rem;
+.loginpage {
 
-    >a {
-        cursor: pointer;
-        align-self: center;
-        margin-top: 1rem;
-    }
-
-    >h1 {
-        align-self: center;
-        font-weight: 400;
-    }
-
-    @include for-desktop {
-        box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
-        padding: 5rem 3rem;
-        width: 50%;
-
-    }
-
-    &Wrapper {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-    }
-
-    .loginForm {
-        display: flex;
-        flex-direction: column;
-        margin: 2rem 0 0 0;
-
-        >button {
-            width: 100%;
-            margin: 2rem 0 0 0;
+    .bottomright {
+        >img {
+            display: flex;
+            float: right;
+            width: 300px;
+            height: 300px;
         }
     }
+    .topleft {
+        >img {
+            display: flex;
+            float: left;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .loginDiv {
+        display: flex;
+        // justify-content: center;
+        // align-content: center;
+        flex-direction: column;
+        // align-self: center;
+        padding-left: 200px;
+        flex-shrink: 1;
+        // padding: 1px;
+        // max-width: 36rem;
+        width: 60%;
+    
+    
+        >h1 {
+            color: #555555;
+            font-size: 40.5px;
+            align-self: center;
+            font-weight: 400;
+        }
+    
+        @include for-desktop {
+            padding: 5rem 0rem;
+            width: 50%;
+        }
+    
+        &Wrapper {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            padding-left: 200px;
+            width: 78%;
+            height: 60%;
+        }
+    
+        .forgotcontent {
+            color: #555555;
+            padding-left: 30%;
+            padding-top: 10px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: normal;
+                >a {
+                    color: #C25FFF;
+                    cursor: pointer;
+                    align-self: center;
+                    margin-top: 1rem;
+                    text-decoration-line: underline;
+                }
+        }
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0 0 0;
+    
+            >button {
+                width: 100%;
+                margin: 2rem 0 0 0;
+                background: #C25FFF;
+                border-radius: 5px;
+                color: #FFFFFF;
+                
+            }
+        }
+    }
+    
 }
