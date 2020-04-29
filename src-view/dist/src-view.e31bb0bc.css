@@ -76,12 +76,12 @@
 ._loginpage_33d1f ._loginDiv_33d1f {
   display: flex;
   flex-direction: column;
-  padding-left: 200px;
+  padding-left: 15rem;
   flex-shrink: 1;
   width: 60%; }
   ._loginpage_33d1f ._loginDiv_33d1f > h1 {
     color: #555555;
-    font-size: 40.5px;
+    font-size: 3.5rem;
     align-self: center;
     font-weight: 400; }
   @media (orientation: landscape) and (min-device-aspect-ratio: 1 / 1) {
@@ -91,14 +91,14 @@
   ._loginpage_33d1f ._loginDivWrapper_33d1f {
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
+    padding-left: 15rem;
     width: 78%;
     height: 60%; }
   ._loginpage_33d1f ._loginDiv_33d1f ._forgotcontent_33d1f {
     color: #555555;
     padding-left: 30%;
-    padding-top: 10px;
-    font-size: 14px;
+    padding-top: 2%;
+    font-size: 1rem;
     font-family: sans-serif;
     font-style: normal;
     font-weight: normal; }
@@ -116,26 +116,26 @@
       width: 100%;
       margin: 2rem 0 0 0;
       background: #C25FFF;
-      border-radius: 5px;
+      border-radius: 1rem;
       color: #FFFFFF; }
 
 ._navbar_62b1c {
   display: flex;
-  margin: 30px; }
+  margin: 3rem; }
   ._navbar_62b1c ._navRight_62b1c {
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
     flex-grow: 1;
-    font-size: 20.25px; }
+    font-size: 1.75rem; }
     ._navbar_62b1c ._navRight_62b1c ._about_62b1c {
       float: right;
       color: #555555;
-      padding: 10px; }
+      padding: 1rem; }
     ._navbar_62b1c ._navRight_62b1c ._signup_62b1c {
       float: right;
       color: #C25FFF;
-      padding: 10px; }
+      padding: 1rem; }
 
 ._signUpDiv_67d8b {
   display: flex;
