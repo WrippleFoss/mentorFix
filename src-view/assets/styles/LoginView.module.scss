@@ -1,49 +1,81 @@
 @import './mixins';
 
-.loginDiv {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    align-self: center;
-    flex-shrink: 1;
-    padding: 5rem 0rem;
-    width: 80%;
-    max-width: 36rem;
+.loginpage {
 
-    >a {
-        cursor: pointer;
-        align-self: center;
-        margin-top: 1rem;
-    }
-
-    >h1 {
-        align-self: center;
-        font-weight: 400;
-    }
-
-    @include for-desktop {
-        box-shadow: 0px 0px 30px -2px rgba(150, 144, 150, 0.85);
-        padding: 5rem 3rem;
-        width: 50%;
-
-    }
-
-    &Wrapper {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-    }
-
-    .loginForm {
-        display: flex;
-        flex-direction: column;
-        margin: 2rem 0 0 0;
-
-        >button {
-            width: 100%;
-            margin: 2rem 0 0 0;
+    .bottomright {
+        >img {
+            display: flex;
+            float: right;
+            width: 20rem;
+            height: 20rem;
         }
     }
+    .topleft {
+        >img {
+            display: flex;
+            float: left;
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    .loginDiv {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15rem;
+        flex-shrink: 1;
+        width: 60%;
+    
+    
+        >h1 {
+            color: #555555;
+            font-size: 3.5rem;
+            align-self: center;
+            font-weight: 400;
+        }
+    
+        @include for-desktop {
+            padding: 5rem 0rem;
+            width: 50%;
+        }
+    
+        &Wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-left: 15rem;
+            width: 78%;
+            height: 60%;
+        }
+    
+        .forgotcontent {
+            color: #555555;
+            padding-left: 30%;
+            padding-top: 2%;
+            font-size: 1rem;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: normal;
+                >a {
+                    color: #C25FFF;
+                    cursor: pointer;
+                    align-self: center;
+                    margin-top: 1rem;
+                    text-decoration-line: underline;
+                }
+        }
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0 0 0;
+    
+            >button {
+                width: 100%;
+                margin: 2rem 0 0 0;
+                background: #C25FFF;
+                border-radius: 1rem;
+                color: #FFFFFF;
+                
+            }
+        }
+    }
+    
 }

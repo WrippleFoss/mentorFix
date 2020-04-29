@@ -33170,7 +33170,7 @@ var PropTypes = _interopRequireWildcard(require("prop-types"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 /** A checker that matches the React.Ref type. */
 var refPropType = PropTypes.oneOfType([PropTypes.func, PropTypes.object]);
@@ -33209,13 +33209,11 @@ var _types = require("./types");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var RefFindNode =
-/*#__PURE__*/
-function (_React$Component) {
+var RefFindNode = /*#__PURE__*/function (_React$Component) {
   (0, _inherits2.default)(RefFindNode, _React$Component);
 
   function RefFindNode() {
@@ -33307,13 +33305,11 @@ var _types = require("./types");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var RefForward =
-/*#__PURE__*/
-function (_React$Component) {
+var RefForward = /*#__PURE__*/function (_React$Component) {
   (0, _inherits2.default)(RefForward, _React$Component);
 
   function RefForward() {
@@ -33380,7 +33376,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var Ref = function Ref(props) {
   var children = props.children,
@@ -38235,9 +38231,7 @@ var getAutoControlledStateValue = function getAutoControlledStateValue(propName,
 
 exports.getAutoControlledStateValue = getAutoControlledStateValue;
 
-var AutoControlledComponent =
-/*#__PURE__*/
-function (_Component) {
+var AutoControlledComponent = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(AutoControlledComponent, _Component);
 
   function AutoControlledComponent() {
@@ -38411,9 +38405,7 @@ var _AutoControlledComponent = require("./AutoControlledComponent");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ModernAutoControlledComponent =
-/*#__PURE__*/
-function (_Component) {
+var ModernAutoControlledComponent = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(ModernAutoControlledComponent, _Component);
 
   function ModernAutoControlledComponent() {
@@ -44744,9 +44736,7 @@ function _possibleConstructorReturn(self, call) {
  */
 
 
-var EventSet =
-/*#__PURE__*/
-function () {
+var EventSet = /*#__PURE__*/function () {
   /**
    * @see https://jsperf.com/suir-eventset-constructor
    */
@@ -44877,9 +44867,7 @@ function normalizeTarget(target) {
   return target || document;
 }
 
-var EventPool =
-/*#__PURE__*/
-function () {
+var EventPool = /*#__PURE__*/function () {
   function EventPool(poolName, handlerSets) {
     _classCallCheck(this, EventPool);
 
@@ -44961,9 +44949,7 @@ _defineProperty(EventPool, "createByType", function (poolName, eventType, eventH
   return new EventPool(poolName, handlerSets);
 });
 
-var EventTarget =
-/*#__PURE__*/
-function () {
+var EventTarget = /*#__PURE__*/function () {
   function EventTarget(target) {
     var _this = this;
 
@@ -45050,9 +45036,7 @@ function () {
   return EventTarget;
 }();
 
-var EventStack =
-/*#__PURE__*/
-function () {
+var EventStack = /*#__PURE__*/function () {
   function EventStack() {
     var _this = this;
 
@@ -45119,9 +45103,7 @@ var instance = new EventStack();
  * This component exposes the EventStack API as public and provides a declarative way to manage it.
  */
 
-var EventStack$1 =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var EventStack$1 = /*#__PURE__*/function (_React$PureComponent) {
   _inherits(EventStack, _React$PureComponent);
 
   function EventStack() {
@@ -45545,7 +45527,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47093,7 +47075,7 @@ var _objectDiff2 = _interopRequireDefault(require("./objectDiff"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./AutoControlledComponent":"node_modules/semantic-ui-react/dist/es/lib/AutoControlledComponent.js","./ModernAutoControlledComponent":"node_modules/semantic-ui-react/dist/es/lib/ModernAutoControlledComponent.js","./childMapping":"node_modules/semantic-ui-react/dist/es/lib/childMapping.js","./childrenUtils":"node_modules/semantic-ui-react/dist/es/lib/childrenUtils.js","./classNameBuilders":"node_modules/semantic-ui-react/dist/es/lib/classNameBuilders.js","./customPropTypes":"node_modules/semantic-ui-react/dist/es/lib/customPropTypes.js","./eventStack":"node_modules/semantic-ui-react/dist/es/lib/eventStack/index.js","./factories":"node_modules/semantic-ui-react/dist/es/lib/factories.js","./getUnhandledProps":"node_modules/semantic-ui-react/dist/es/lib/getUnhandledProps.js","./getElementType":"node_modules/semantic-ui-react/dist/es/lib/getElementType.js","./htmlPropsUtils":"node_modules/semantic-ui-react/dist/es/lib/htmlPropsUtils.js","./isBrowser":"node_modules/semantic-ui-react/dist/es/lib/isBrowser.js","./doesNodeContainClick":"node_modules/semantic-ui-react/dist/es/lib/doesNodeContainClick.js","./leven":"node_modules/semantic-ui-react/dist/es/lib/leven.js","./createPaginationItems":"node_modules/semantic-ui-react/dist/es/lib/createPaginationItems/index.js","./SUI":"node_modules/semantic-ui-react/dist/es/lib/SUI.js","./numberToWord":"node_modules/semantic-ui-react/dist/es/lib/numberToWord.js","./normalizeOffset":"node_modules/semantic-ui-react/dist/es/lib/normalizeOffset.js","./normalizeTransitionDuration":"node_modules/semantic-ui-react/dist/es/lib/normalizeTransitionDuration.js","./objectDiff":"node_modules/semantic-ui-react/dist/es/lib/objectDiff.js"}],"node_modules/lodash/without.js":[function(require,module,exports) {
@@ -47231,7 +47213,7 @@ var _IconGroup = _interopRequireDefault(require("./IconGroup"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47239,9 +47221,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * An icon is a glyph used to represent something else.
  * @see Image
  */
-var Icon =
-/*#__PURE__*/
-function (_PureComponent) {
+var Icon = /*#__PURE__*/function (_PureComponent) {
   (0, _inherits2.default)(Icon, _PureComponent);
 
   function Icon() {
@@ -47777,16 +47757,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * An inner component that allows you to render children outside their parent.
  */
-var PortalInner =
-/*#__PURE__*/
-function (_Component) {
+var PortalInner = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(PortalInner, _Component);
 
   function PortalInner() {
@@ -47904,7 +47882,7 @@ var _PortalInner = _interopRequireDefault(require("./PortalInner"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47915,9 +47893,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Dimmer
  * @see Confirm
  */
-var Portal =
-/*#__PURE__*/
-function (_Component) {
+var Portal = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Portal, _Component);
 
   function Portal() {
@@ -48385,16 +48361,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * An inner element for a Dimmer.
  */
-var DimmerInner =
-/*#__PURE__*/
-function (_Component) {
+var DimmerInner = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(DimmerInner, _Component);
 
   function DimmerInner() {
@@ -48567,16 +48541,14 @@ var _DimmerInner = _interopRequireDefault(require("./DimmerInner"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A dimmer hides distractions to focus attention on particular content.
  */
-var Dimmer =
-/*#__PURE__*/
-function (_Component) {
+var Dimmer = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Dimmer, _Component);
 
   function Dimmer() {
@@ -49070,16 +49042,14 @@ var _LabelGroup = _interopRequireDefault(require("./LabelGroup"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A label displays content classification.
  */
-var Label =
-/*#__PURE__*/
-function (_Component) {
+var Label = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Label, _Component);
 
   function Label() {
@@ -49555,7 +49525,7 @@ var _ButtonOr = _interopRequireDefault(require("./ButtonOr"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49565,9 +49535,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Icon
  * @see Label
  */
-var Button =
-/*#__PURE__*/
-function (_Component) {
+var Button = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Button, _Component);
 
   function Button() {
@@ -50471,9 +50439,7 @@ var nodeRegistry = new _NodeRegistry.default();
  * A component that allows to manage classNames on a DOM node in declarative manner.
  */
 
-var MountNode =
-/*#__PURE__*/
-function (_Component) {
+var MountNode = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(MountNode, _Component);
 
   function MountNode() {
@@ -50701,16 +50667,14 @@ var _Button = _interopRequireDefault(require("../../elements/Button"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A modal can contain a row of actions.
  */
-var ModalActions =
-/*#__PURE__*/
-function (_Component) {
+var ModalActions = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(ModalActions, _Component);
 
   function ModalActions() {
@@ -50993,7 +50957,7 @@ var _utils = require("./utils");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51002,9 +50966,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Confirm
  * @see Portal
  */
-var Modal =
-/*#__PURE__*/
-function (_Component) {
+var Modal = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Modal, _Component);
 
   function Modal() {
@@ -51426,7 +51388,7 @@ var _Modal = _interopRequireDefault(require("../../modules/Modal"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51434,9 +51396,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * A Confirm modal gives the user a choice to confirm or cancel an action/
  * @see Modal
  */
-var Confirm =
-/*#__PURE__*/
-function (_Component) {
+var Confirm = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Confirm, _Component);
 
   function Confirm() {
@@ -52057,16 +52017,14 @@ var _Icon = _interopRequireDefault(require("../../elements/Icon"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A menu can contain an item.
  */
-var MenuItem =
-/*#__PURE__*/
-function (_Component) {
+var MenuItem = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(MenuItem, _Component);
 
   function MenuItem() {
@@ -52294,9 +52252,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * A menu displays grouped navigation actions.
  * @see Dropdown
  */
-var Menu =
-/*#__PURE__*/
-function (_Component) {
+var Menu = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Menu, _Component);
 
   function Menu() {
@@ -52528,9 +52484,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * An item of a pagination.
  */
-var PaginationItem =
-/*#__PURE__*/
-function (_Component) {
+var PaginationItem = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(PaginationItem, _Component);
 
   function PaginationItem() {
@@ -52666,9 +52620,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * A component to render a pagination.
  */
-var Pagination =
-/*#__PURE__*/
-function (_Component) {
+var Pagination = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Pagination, _Component);
 
   function Pagination() {
@@ -52932,7 +52884,7 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -52941,9 +52893,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Form
  * @see Radio
  */
-var Checkbox =
-/*#__PURE__*/
-function (_Component) {
+var Checkbox = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Checkbox, _Component);
 
   function Checkbox() {
@@ -53383,16 +53333,14 @@ var _isVisible = _interopRequireDefault(require("./lib/isVisible"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Responsive can control visibility of content.
  */
-var Responsive =
-/*#__PURE__*/
-function (_Component) {
+var Responsive = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Responsive, _Component);
 
   function Responsive() {
@@ -54017,7 +53965,7 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54028,9 +53976,7 @@ var names = ['ad', 'andorra', 'ae', 'united arab emirates', 'uae', 'af', 'afghan
 
 exports.names = names;
 
-var Flag =
-/*#__PURE__*/
-function (_PureComponent) {
+var Flag = /*#__PURE__*/function (_PureComponent) {
   (0, _inherits2.default)(Flag, _PureComponent);
 
   function Flag() {
@@ -54154,16 +54100,14 @@ var _Label = _interopRequireDefault(require("../../elements/Label"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * An item sub-component for Dropdown component.
  */
-var DropdownItem =
-/*#__PURE__*/
-function (_Component) {
+var DropdownItem = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(DropdownItem, _Component);
 
   function DropdownItem() {
@@ -54498,16 +54442,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A search item sub-component for Dropdown component.
  */
-var DropdownSearchInput =
-/*#__PURE__*/
-function (_Component) {
+var DropdownSearchInput = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(DropdownSearchInput, _Component);
 
   function DropdownSearchInput() {
@@ -54699,7 +54641,7 @@ var _DropdownSearchInput = _interopRequireDefault(require("./DropdownSearchInput
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54714,9 +54656,7 @@ var getKeyOrValue = function getKeyOrValue(key, value) {
  */
 
 
-var Dropdown =
-/*#__PURE__*/
-function (_Component) {
+var Dropdown = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Dropdown, _Component);
 
   function Dropdown() {
@@ -56133,7 +56073,7 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56141,9 +56081,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * A TextArea can be used to allow for extended user input.
  * @see Form
  */
-var TextArea =
-/*#__PURE__*/
-function (_Component) {
+var TextArea = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(TextArea, _Component);
 
   function TextArea() {
@@ -56334,16 +56272,14 @@ var _Transition = _interopRequireDefault(require("./Transition"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A Transition.Group animates children as they mount and unmount.
  */
-var TransitionGroup =
-/*#__PURE__*/
-function (_React$Component) {
+var TransitionGroup = /*#__PURE__*/function (_React$Component) {
   (0, _inherits2.default)(TransitionGroup, _React$Component);
 
   function TransitionGroup() {
@@ -56539,9 +56475,7 @@ var TRANSITION_TYPE = {
 
 };
 
-var Transition =
-/*#__PURE__*/
-function (_Component) {
+var Transition = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Transition, _Component);
 
   function Transition() {
@@ -56889,7 +56823,7 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56898,9 +56832,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Portal
  * @see Transition
  */
-var TransitionablePortal =
-/*#__PURE__*/
-function (_Component) {
+var TransitionablePortal = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(TransitionablePortal, _Component);
 
   function TransitionablePortal(props) {
@@ -57114,16 +57046,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Visibility provides a set of callbacks for when a content appears in the viewport.
  */
-var Visibility =
-/*#__PURE__*/
-function (_Component) {
+var Visibility = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Visibility, _Component);
 
   function Visibility() {
@@ -57737,16 +57667,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A section sub-component for Breadcrumb component.
  */
-var BreadcrumbSection =
-/*#__PURE__*/
-function (_Component) {
+var BreadcrumbSection = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(BreadcrumbSection, _Component);
 
   function BreadcrumbSection() {
@@ -57979,7 +57907,7 @@ var _Radio = _interopRequireDefault(require("../../addons/Radio"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58410,7 +58338,7 @@ var _Label = _interopRequireDefault(require("../Label"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58421,9 +58349,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Icon
  * @see Label
  */
-var Input =
-/*#__PURE__*/
-function (_Component) {
+var Input = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Input, _Component);
 
   function Input() {
@@ -58929,7 +58855,7 @@ var _FormTextArea = _interopRequireDefault(require("./FormTextArea"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58944,9 +58870,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Select
  * @see Visibility
  */
-var Form =
-/*#__PURE__*/
-function (_Component) {
+var Form = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Form, _Component);
 
   function Form() {
@@ -59668,7 +59592,7 @@ var _MessageItem = _interopRequireDefault(require("./MessageItem"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -59676,9 +59600,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * A message displays information that explains nearby content.
  * @see Form
  */
-var Message =
-/*#__PURE__*/
-function (_Component) {
+var Message = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Message, _Component);
 
   function Message() {
@@ -61234,16 +61156,14 @@ var _ListIcon = _interopRequireDefault(require("./ListIcon"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A list item can contain a set of items.
  */
-var ListItem =
-/*#__PURE__*/
-function (_Component) {
+var ListItem = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(ListItem, _Component);
 
   function ListItem() {
@@ -61505,16 +61425,14 @@ var _ListList = _interopRequireDefault(require("./ListList"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A list groups related content.
  */
-var List =
-/*#__PURE__*/
-function (_Component) {
+var List = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(List, _Component);
 
   function List() {
@@ -62985,16 +62903,14 @@ var _StepTitle = _interopRequireDefault(require("./StepTitle"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A step shows the completion status of an activity in a series of activities.
  */
-var Step =
-/*#__PURE__*/
-function (_Component) {
+var Step = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Step, _Component);
 
   function Step() {
@@ -63189,16 +63105,14 @@ var _Icon = _interopRequireDefault(require("../../elements/Icon"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A title sub-component for Accordion component.
  */
-var AccordionTitle =
-/*#__PURE__*/
-function (_Component) {
+var AccordionTitle = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(AccordionTitle, _Component);
 
   function AccordionTitle() {
@@ -63384,16 +63298,14 @@ var _AccordionContent = _interopRequireDefault(require("./AccordionContent"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A panel sub-component for Accordion component.
  */
-var AccordionPanel =
-/*#__PURE__*/
-function (_Component) {
+var AccordionPanel = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(AccordionPanel, _Component);
 
   function AccordionPanel() {
@@ -63536,9 +63448,7 @@ var warnIfPropsAreInvalid = function warnIfPropsAreInvalid(props, state) {
  */
 
 
-var AccordionAccordion =
-/*#__PURE__*/
-function (_Component) {
+var AccordionAccordion = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(AccordionAccordion, _Component);
 
   function AccordionAccordion() {
@@ -63775,9 +63685,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * An embed displays content from other websites like YouTube videos or Google Maps.
  */
-var Embed =
-/*#__PURE__*/
-function (_Component) {
+var Embed = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Embed, _Component);
 
   function Embed() {
@@ -67254,7 +67162,7 @@ var _createReactContext = _interopRequireDefault(require("create-react-context")
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67264,9 +67172,7 @@ var ManagerContext = (0, _createReactContext.default)({
 });
 exports.ManagerContext = ManagerContext;
 
-var Manager =
-/*#__PURE__*/
-function (_React$Component) {
+var Manager = /*#__PURE__*/function (_React$Component) {
   (0, _inheritsLoose2.default)(Manager, _React$Component);
 
   function Manager() {
@@ -67371,7 +67277,7 @@ var _utils = require("./utils");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67384,9 +67290,7 @@ var initialStyle = {
 };
 var initialArrowStyle = {};
 
-var InnerPopper =
-/*#__PURE__*/
-function (_React$Component) {
+var InnerPopper = /*#__PURE__*/function (_React$Component) {
   (0, _inheritsLoose2.default)(InnerPopper, _React$Component);
 
   function InnerPopper() {
@@ -67571,13 +67475,11 @@ var _utils = require("./utils");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var InnerReference =
-/*#__PURE__*/
-function (_React$Component) {
+var InnerReference = /*#__PURE__*/function (_React$Component) {
   (0, _inheritsLoose2.default)(InnerReference, _React$Component);
 
   function InnerReference() {
@@ -67660,7 +67562,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 },{"./Popper":"node_modules/react-popper/lib/esm/Popper.js","./Manager":"node_modules/react-popper/lib/esm/Manager.js","./Reference":"node_modules/react-popper/lib/esm/Reference.js"}],"node_modules/lodash/_baseInverter.js":[function(require,module,exports) {
 var baseForOwn = require('./_baseForOwn');
 
@@ -67796,9 +67698,7 @@ var _reactComponentRef = require("@stardust-ui/react-component-ref");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ReferenceProxy =
-/*#__PURE__*/
-function () {
+var ReferenceProxy = /*#__PURE__*/function () {
   function ReferenceProxy(refObject) {
     (0, _classCallCheck2.default)(this, ReferenceProxy);
     this.ref = refObject;
@@ -68019,16 +67919,14 @@ var _PopupHeader = _interopRequireDefault(require("./PopupHeader"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A Popup displays additional information on top of a page.
  */
-var Popup =
-/*#__PURE__*/
-function (_Component) {
+var Popup = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Popup, _Component);
 
   function Popup() {
@@ -68534,16 +68432,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A progress bar shows the progression of a task.
  */
-var Progress =
-/*#__PURE__*/
-function (_Component) {
+var Progress = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Progress, _Component);
 
   function Progress() {
@@ -68836,16 +68732,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * An internal icon sub-component for Rating component
  */
-var RatingIcon =
-/*#__PURE__*/
-function (_Component) {
+var RatingIcon = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(RatingIcon, _Component);
 
   function RatingIcon() {
@@ -68996,9 +68890,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * A rating indicates user interest in content.
  */
-var Rating =
-/*#__PURE__*/
-function (_Component) {
+var Rating = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Rating, _Component);
 
   function Rating() {
@@ -69407,7 +69299,7 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -69442,9 +69334,7 @@ var defaultRenderer = function defaultRenderer(_ref) {
 
 defaultRenderer.handledProps = [];
 
-var SearchResult =
-/*#__PURE__*/
-function (_Component) {
+var SearchResult = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(SearchResult, _Component);
 
   function SearchResult() {
@@ -69659,9 +69549,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * A search module allows a user to query for results from a selection of data
  */
-var Search =
-/*#__PURE__*/
-function (_Component) {
+var Search = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Search, _Component);
 
   function Search() {
@@ -70271,7 +70159,7 @@ var React = _interopRequireWildcard(require("react"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var isActionSupported = function isActionSupported(targetRef, method) {
   return targetRef && !!targetRef.current && !!targetRef.current[method];
@@ -70324,7 +70212,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function EventListener(props) {
   (0, _useEventListener.default)(props);
@@ -70553,16 +70441,14 @@ var _SidebarPusher = _interopRequireDefault(require("./SidebarPusher"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A sidebar hides additional content beside a page.
  */
-var Sidebar =
-/*#__PURE__*/
-function (_Component) {
+var Sidebar = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Sidebar, _Component);
 
   function Sidebar(props) {
@@ -70790,16 +70676,14 @@ var _lib = require("../../lib");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Sticky content stays fixed to the browser viewport while another column of content is visible on the page.
  */
-var Sticky =
-/*#__PURE__*/
-function (_Component) {
+var Sticky = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Sticky, _Component);
 
   function Sticky() {
@@ -71285,9 +71169,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @see Menu
  * @see Segment
  */
-var Tab =
-/*#__PURE__*/
-function (_Component) {
+var Tab = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Tab, _Component);
 
   function Tab() {
@@ -71991,16 +71873,14 @@ var _CardMeta = _interopRequireDefault(require("./CardMeta"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * A card displays site content in a manner similar to a playing card.
  */
-var Card =
-/*#__PURE__*/
-function (_Component) {
+var Card = /*#__PURE__*/function (_Component) {
   (0, _inherits2.default)(Card, _Component);
 
   function Card() {
@@ -77459,20 +77339,20 @@ var shouldNavigate = function shouldNavigate(event) {
 module.exports = "/hero-image.c4ef0636.png";
 },{}],"assets/styles/components/LandingView.module.scss":[function(require,module,exports) {
 module.exports = {
-  "landingContainer": "_landingContainer_4ce18",
-  "landingNavbar": "_landingNavbar_4ce18",
-  "heroDiv": "_heroDiv_4ce18",
-  "heroText": "_heroText_4ce18",
-  "landingButton": "_landingButton_4ce18",
-  "greenButton": "_greenButton_4ce18",
-  "heroImage": "_heroImage_4ce18"
+  "landingContainer": "_landingContainer_dd449",
+  "landingNavbar": "_landingNavbar_dd449",
+  "heroDiv": "_heroDiv_dd449",
+  "heroText": "_heroText_dd449",
+  "landingButton": "_landingButton_dd449",
+  "greenButton": "_greenButton_dd449",
+  "heroImage": "_heroImage_dd449"
 };
 },{}],"assets/logo/master-logo.png":[function(require,module,exports) {
 module.exports = "/master-logo.629abb14.png";
 },{}],"assets/styles/components/Navbar.module.scss":[function(require,module,exports) {
 module.exports = {
-  "navbar": "_navbar_7e8b6",
-  "navRight": "_navRight_7e8b6"
+  "navbar": "_navbar_b87f7",
+  "navRight": "_navRight_b87f7"
 };
 },{}],"components/Navbar.js":[function(require,module,exports) {
 "use strict";
@@ -77495,22 +77375,23 @@ var _NavbarModule = _interopRequireDefault(require("../assets/styles/components/
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Navbar = function Navbar() {
-  return _react.default.createElement("nav", {
-    className: _NavbarModule.default.navbar
-  }, _react.default.createElement("div", {
-    className: _NavbarModule.default.navbarBrand
-  }, _react.default.createElement(_router.Link, {
-    to: "/"
-  }, _react.default.createElement("img", {
-    src: _masterLogo.default
-  }))), _react.default.createElement("div", {
-    className: _NavbarModule.default.navRight
-  }, _react.default.createElement(_router.Link, {
-    to: "/login"
-  }, _react.default.createElement(_semanticUiReact.Button, {
-    basic: true,
-    color: "blue"
-  }, "Login"))));
+  return (/*#__PURE__*/_react.default.createElement("nav", {
+      className: _NavbarModule.default.navbar
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _NavbarModule.default.navbarBrand
+    }, /*#__PURE__*/_react.default.createElement(_router.Link, {
+      to: "/"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: _masterLogo.default
+    }))), /*#__PURE__*/_react.default.createElement("div", {
+      className: _NavbarModule.default.navRight
+    }, /*#__PURE__*/_react.default.createElement(_router.Link, {
+      to: "/login"
+    }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
+      basic: true,
+      color: "blue"
+    }, "Login"))))
+  );
 };
 
 var _default = Navbar;
@@ -77538,47 +77419,165 @@ var _Navbar = _interopRequireDefault(require("../components/Navbar"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var LandingView = function LandingView() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("div", {
-    className: _LandingViewModule.default.landingContainer
-  }, _react.default.createElement("div", {
-    className: _LandingViewModule.default.landingNavbar
-  }, _react.default.createElement(_Navbar.default, null)), _react.default.createElement("div", {
-    className: _LandingViewModule.default.heroDiv
-  }, _react.default.createElement("div", {
-    className: _LandingViewModule.default.heroText
-  }, _react.default.createElement("h3", null, _react.default.createElement("div", null, "Connect with ", _react.default.createElement("strong", null, "Mentors")), _react.default.createElement("div", null, "to kickstart your Career")), _react.default.createElement("div", {
-    className: _LandingViewModule.default.miniText
-  }, _react.default.createElement("div", null, "Every expert was once a beginner. Get"), _react.default.createElement("div", null, "guidance, support & mentorship from"), _react.default.createElement("div", null, "skilled mentors & reach greater heights.")), _react.default.createElement("div", {
-    className: _LandingViewModule.default.landingButton
-  }, _react.default.createElement(_router.Link, {
-    to: "/sign-up"
-  }, _react.default.createElement(_semanticUiReact.Button, {
-    color: "green",
-    className: _LandingViewModule.default.greenButton
-  }, "Sign up")))), _react.default.createElement("div", {
-    className: _LandingViewModule.default.heroImage
-  }, _react.default.createElement("img", {
-    src: _heroImage.default,
-    alt: "hero-image"
-  }))), _react.default.createElement("div", {
-    className: _LandingViewModule.default.deadTing
-  })));
+  return (/*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.landingContainer
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.landingNavbar
+    }, /*#__PURE__*/_react.default.createElement(_Navbar.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.heroDiv
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.heroText
+    }, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("div", null, "Connect with ", /*#__PURE__*/_react.default.createElement("strong", null, "Mentors")), /*#__PURE__*/_react.default.createElement("div", null, "to kickstart your Career")), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.miniText
+    }, /*#__PURE__*/_react.default.createElement("div", null, "Every expert was once a beginner. Get"), /*#__PURE__*/_react.default.createElement("div", null, "guidance, support & mentorship from"), /*#__PURE__*/_react.default.createElement("div", null, "skilled mentors & reach greater heights.")), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.landingButton
+    }, /*#__PURE__*/_react.default.createElement(_router.Link, {
+      to: "/sign-up"
+    }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
+      color: "green",
+      className: _LandingViewModule.default.greenButton
+    }, "Sign up")))), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.heroImage
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: _heroImage.default,
+      alt: "hero-image"
+    }))), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LandingViewModule.default.deadTing
+    })))
+  );
 };
 
 var _default = LandingView;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/hero-image.png":"assets/hero-image.png","../assets/styles/components/LandingView.module.scss":"assets/styles/components/LandingView.module.scss","../components/Navbar":"components/Navbar.js"}],"assets/styles/LoginView.module.scss":[function(require,module,exports) {
 module.exports = {
-  "loginDiv": "_loginDiv_8c853",
-  "loginDivWrapper": "_loginDivWrapper_8c853",
-  "loginForm": "_loginForm_8c853"
+  "loginpage": "_loginpage_33d1f",
+  "bottomright": "_bottomright_33d1f",
+  "topleft": "_topleft_33d1f",
+  "loginDiv": "_loginDiv_33d1f",
+  "loginDivWrapper": "_loginDivWrapper_33d1f",
+  "forgotcontent": "_forgotcontent_33d1f",
+  "loginForm": "_loginForm_33d1f"
+};
+},{}],"assets/styles/components/NavbarLogin.module.scss":[function(require,module,exports) {
+module.exports = {
+  "navbar": "_navbar_62b1c",
+  "navRight": "_navRight_62b1c",
+  "about": "_about_62b1c",
+  "signup": "_signup_62b1c"
+};
+},{}],"components/NavbarLogin.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _router = require("@reach/router");
+
+var _masterLogo = _interopRequireDefault(require("../assets/logo/master-logo.png"));
+
+var _NavbarLoginModule = _interopRequireDefault(require("../assets/styles/components/NavbarLogin.module.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Navbar = function Navbar() {
+  return (/*#__PURE__*/_react.default.createElement("div", {
+      className: _NavbarLoginModule.default.navbar
+    }, /*#__PURE__*/_react.default.createElement(_router.Link, {
+      to: "/"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: _masterLogo.default
+    })), /*#__PURE__*/_react.default.createElement("div", {
+      className: _NavbarLoginModule.default.navRight
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _NavbarLoginModule.default.signup
+    }, "Signup"), /*#__PURE__*/_react.default.createElement("div", {
+      className: _NavbarLoginModule.default.about
+    }, "About")))
+  );
+};
+
+var _default = Navbar;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","@reach/router":"node_modules/@reach/router/es/index.js","../assets/logo/master-logo.png":"assets/logo/master-logo.png","../assets/styles/components/NavbarLogin.module.scss":"assets/styles/components/NavbarLogin.module.scss"}],"assets/images/topleft.png":[function(require,module,exports) {
+module.exports = "/topleft.066dbcfb.png";
+},{}],"assets/images/bottomright.png":[function(require,module,exports) {
+module.exports = "/bottomright.f97cc6c8.png";
+},{}],"views/LoginView.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _LoginViewModule = _interopRequireDefault(require("../assets/styles/LoginView.module.scss"));
+
+var _NavbarLogin = _interopRequireDefault(require("../components/NavbarLogin"));
+
+var _topleft = _interopRequireDefault(require("../assets/images/topleft.png"));
+
+var _bottomright = _interopRequireDefault(require("../assets/images/bottomright.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var LoginForm = function LoginForm() {
+  return (/*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_NavbarLogin.default, null), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LoginViewModule.default.loginpage
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _LoginViewModule.default.topleft
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: _topleft.default,
+      alt: "mentorfix"
+    })), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LoginViewModule.default.loginDivWrapper
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _LoginViewModule.default.loginDiv
+    }, /*#__PURE__*/_react.default.createElement("h1", null, "Login"), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form, {
+      className: _LoginViewModule.default.loginForm
+    }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form.Input, {
+      fluid: true,
+      label: "Email",
+      placeholder: "Enter your email address"
+    }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form.Input, {
+      fluid: true,
+      label: "Password",
+      placeholder: "Enter your password"
+    }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
+      content: "Log In"
+    })), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LoginViewModule.default.forgotcontent
+    }, "Forgot password? ", /*#__PURE__*/_react.default.createElement("a", null, "Click here")))), /*#__PURE__*/_react.default.createElement("div", {
+      className: _LoginViewModule.default.bottomright
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: _bottomright.default,
+      alt: "mentorfix"
+    }))))
+  );
+};
+
+var _default = LoginForm;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/styles/LoginView.module.scss":"assets/styles/LoginView.module.scss","../components/NavbarLogin":"components/NavbarLogin.js","../assets/images/topleft.png":"assets/images/topleft.png","../assets/images/bottomright.png":"assets/images/bottomright.png"}],"assets/styles/SignUpView.module.scss":[function(require,module,exports) {
+module.exports = {
+  "signUpDiv": "_signUpDiv_67d8b",
+  "signUpDivWrapper": "_signUpDivWrapper_67d8b",
+  "signUpForm": "_signUpForm_67d8b"
 };
 },{}],"assets/styles/components/AppLayout.module.scss":[function(require,module,exports) {
 module.exports = {
-  "AppLayout": "_AppLayout_bdfc1",
-  "navbar": "_navbar_bdfc1",
-  "childContent": "_childContent_bdfc1",
-  "childContentWrapper": "_childContentWrapper_bdfc1"
+  "AppLayout": "_AppLayout_129cb",
+  "navbar": "_navbar_129cb",
+  "childContent": "_childContent_129cb",
+  "childContentWrapper": "_childContentWrapper_129cb"
 };
 },{}],"layouts/AppLayout.jsx":[function(require,module,exports) {
 "use strict";
@@ -77597,67 +77596,21 @@ var _AppLayoutModule = _interopRequireDefault(require("../assets/styles/componen
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AppLayout = function AppLayout(props) {
-  return _react.default.createElement("div", {
-    className: _AppLayoutModule.default.AppLayout
-  }, _react.default.createElement("div", {
-    className: _AppLayoutModule.default.navbar
-  }, _react.default.createElement(_Navbar.default, null)), _react.default.createElement("div", {
-    className: _AppLayoutModule.default.childContentWrapper
-  }, _react.default.createElement("div", {
-    className: _AppLayoutModule.default.childContent
-  }, props.children)));
+  return (/*#__PURE__*/_react.default.createElement("div", {
+      className: _AppLayoutModule.default.AppLayout
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _AppLayoutModule.default.navbar
+    }, /*#__PURE__*/_react.default.createElement(_Navbar.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+      className: _AppLayoutModule.default.childContentWrapper
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _AppLayoutModule.default.childContent
+    }, props.children)))
+  );
 };
 
 var _default = AppLayout;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Navbar":"components/Navbar.js","../assets/styles/components/AppLayout.module.scss":"assets/styles/components/AppLayout.module.scss"}],"views/LoginView.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _semanticUiReact = require("semantic-ui-react");
-
-var _LoginViewModule = _interopRequireDefault(require("../assets/styles/LoginView.module.scss"));
-
-var _AppLayout = _interopRequireDefault(require("../layouts/AppLayout"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var LoginForm = function LoginForm() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_AppLayout.default, null, _react.default.createElement("div", {
-    className: _LoginViewModule.default.loginDivWrapper
-  }, _react.default.createElement("div", {
-    className: _LoginViewModule.default.loginDiv
-  }, _react.default.createElement("h1", null, "Login to continue"), _react.default.createElement(_semanticUiReact.Form, {
-    className: _LoginViewModule.default.loginForm
-  }, _react.default.createElement(_semanticUiReact.Form.Input, {
-    fluid: true,
-    label: "Email",
-    placeholder: "Enter your email"
-  }), _react.default.createElement(_semanticUiReact.Form.Input, {
-    fluid: true,
-    label: "Password",
-    placeholder: "Enter password"
-  }), _react.default.createElement(_semanticUiReact.Button, {
-    positive: true,
-    content: "Log In"
-  })), _react.default.createElement("a", null, "Forgot password?")))));
-};
-
-var _default = LoginForm;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../assets/styles/LoginView.module.scss":"assets/styles/LoginView.module.scss","../layouts/AppLayout":"layouts/AppLayout.jsx"}],"assets/styles/SignUpView.module.scss":[function(require,module,exports) {
-module.exports = {
-  "signUpDiv": "_signUpDiv_b0e2c",
-  "signUpDivWrapper": "_signUpDivWrapper_b0e2c",
-  "signUpForm": "_signUpForm_b0e2c"
-};
-},{}],"views/SignUpView.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Navbar":"components/Navbar.js","../assets/styles/components/AppLayout.module.scss":"assets/styles/components/AppLayout.module.scss"}],"views/SignUpView.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77686,29 +77639,30 @@ var options = [{
 }];
 
 var SignUpForm = function SignUpForm() {
-  return _react.default.createElement(_AppLayout.default, null, _react.default.createElement("div", {
-    className: _SignUpViewModule.default.signUpDivWrapper
-  }, _react.default.createElement("div", {
-    className: _SignUpViewModule.default.signUpDiv
-  }, _react.default.createElement("h1", null, "Welcome to MentorFix"), _react.default.createElement(_semanticUiReact.Form, {
-    className: _SignUpViewModule.default.signUpForm
-  }, _react.default.createElement(_semanticUiReact.Form.Input, {
-    fluid: true,
-    label: "Email",
-    placeholder: "Enter your email"
-  }), _react.default.createElement(_semanticUiReact.Form.Input, {
-    fluid: true,
-    label: "Password",
-    placeholder: "Enter password"
-  }), _react.default.createElement(_semanticUiReact.Form.Select, {
-    options: options,
-    fluid: true,
-    label: "Signup as",
-    placeholder: "Select a type"
-  }), _react.default.createElement(_semanticUiReact.Button, {
-    positive: true,
-    content: "Sign up"
-  })))));
+  return (/*#__PURE__*/_react.default.createElement(_AppLayout.default, null, /*#__PURE__*/_react.default.createElement("div", {
+      className: _SignUpViewModule.default.signUpDivWrapper
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: _SignUpViewModule.default.signUpDiv
+    }, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to MentorFix"), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form, {
+      className: _SignUpViewModule.default.signUpForm
+    }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form.Input, {
+      fluid: true,
+      label: "Email",
+      placeholder: "Enter your email"
+    }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form.Input, {
+      fluid: true,
+      label: "Password",
+      placeholder: "Enter password"
+    }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Form.Select, {
+      options: options,
+      fluid: true,
+      label: "Signup as",
+      placeholder: "Select a type"
+    }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
+      positive: true,
+      content: "Sign up"
+    })))))
+  );
 };
 
 var _default = SignUpForm;
@@ -77734,13 +77688,14 @@ var _SignUpView = _interopRequireDefault(require("./views/SignUpView"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = function _default() {
-  return _react.default.createElement(_router.Router, null, _react.default.createElement(_LandingView.default, {
-    path: "/"
-  }), _react.default.createElement(_LoginView.default, {
-    path: "/login"
-  }), _react.default.createElement(_SignUpView.default, {
-    path: "/sign-up"
-  }));
+  return (/*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_LandingView.default, {
+      path: "/"
+    }), /*#__PURE__*/_react.default.createElement(_LoginView.default, {
+      path: "/login"
+    }), /*#__PURE__*/_react.default.createElement(_SignUpView.default, {
+      path: "/sign-up"
+    }))
+  );
 };
 
 exports.default = _default;
@@ -77760,7 +77715,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // import './assets/styles/index.scss'
 var App = function App() {
-  return _react.default.createElement(_Routes.default, null);
+  return (/*#__PURE__*/_react.default.createElement(_Routes.default, null)
+  );
 };
 
 var _default = App;
@@ -77776,6 +77732,6 @@ var _app = _interopRequireDefault(require("./app"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement(_app.default, null), document.getElementById('root'));
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_app.default, null), document.getElementById('root'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"app.js"}]},{},["index.js"], null)
 //# sourceMappingURL=/src-view.e31bb0bc.js.map
