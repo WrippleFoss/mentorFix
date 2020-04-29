@@ -64,14 +64,14 @@
 ._loginpage_33d1f ._bottomright_33d1f > img {
   display: flex;
   float: right;
-  width: 300px;
-  height: 300px; }
+  width: 20rem;
+  height: 20rem; }
 
 ._loginpage_33d1f ._topleft_33d1f > img {
   display: flex;
   float: left;
-  width: 300px;
-  height: 300px; }
+  width: 20rem;
+  height: 20rem; }
 
 ._loginpage_33d1f ._loginDiv_33d1f {
   display: flex;
